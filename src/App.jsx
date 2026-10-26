@@ -1,12 +1,12 @@
 import imageMetadata from './data/image-metadata.json';
 import { Localize, useLanguage } from './i18n/Language.jsx';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import logo from '../images/Company_Logo.png';
 import constructionImage from '../images/03.jpg';
 import projects from './data/projects.json';
 import { content } from './data/content.js';
 import { serviceDirectory } from './data/service-directory.js';
-import { Counter, CursorAccent, PageControls, useScrollReveal } from './components/Effects.jsx';
+import { Counter, PageControls, useScrollReveal } from './components/Effects.jsx';
 import HeroSlideshow from './components/HeroSlideshow.jsx';
 import ProjectCard from './components/ProjectCard.jsx';
 import Contact from './sections/Contact.jsx';
@@ -21,7 +21,7 @@ import { useMobileViewport } from './components/useMobileViewport.js';
 const serviceImageKeys=['/images/03.jpg','/services/custom-furniture-workshop.webp','/services/construction-framework.webp','/services/steel-warehouse-interior.webp'];
 export default function App() {
   const { language } = useLanguage(); const n=language==='bn'?1:0;
-  const gallery = useRef(); const [menu, setMenu] = useState(false); const [activeNav, setActiveNav] = useState('home'); const [contactRequest, setContactRequest] = useState({ id: 0, subject: '' });
+  const [menu, setMenu] = useState(false); const [activeNav, setActiveNav] = useState('home'); const [contactRequest, setContactRequest] = useState({ id: 0, subject: '' });
   const openContactForm = useCallback((subject = '', product = null) => setContactRequest(request => ({ id: request.id + 1, subject, product })), []);
   const bookConsultation = useCallback(() => openContactForm('Consultation'), [openContactForm]);
   useEffect(() => {
@@ -132,8 +132,7 @@ export default function App() {
       <InteriorProjects onEnquire={openContactForm} />
       <Furniture onEnquire={openContactForm} />
       <AdSteel onEnquire={openContactForm} />
-      <section id="projects" className="projects section" ref={gallery}>
-        <CursorAccent areaRef={gallery} />
+      <section id="projects" className="projects section">
         <div className="section-heading project-intro" data-reveal>
           <div><p className="eyebrow">PROJECT FILMS</p><h2>Spaces in <em>motion.</em></h2></div>
           <p>Watch our project videos to see the spaces and the work in more detail.</p>
