@@ -1,0 +1,9 @@
+html body #root button.steel-photo-open{display:block;width:100%;padding:0;border:0;box-shadow:none;cursor:zoom-in;border-radius:10px}
+html body #root button.steel-photo-open:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+html body #root .steel-image-dialog{width:min(1100px,calc(100% - 32px));padding:28px;scroll-padding-block:70px 24px}
+html body #root .steel-image-caption{padding-right:54px;margin-bottom:20px}
+html body #root .steel-image-caption .eyebrow{font-size:11px;line-height:1.7;margin:0 0 8px;color:var(--brass)}
+html body #root .steel-image-caption h2{font-size:clamp(20px,2.4vw,30px);line-height:1.4;letter-spacing:-.4px;margin:0 0 8px;overflow-wrap:break-word}
+html body #root .steel-image-caption>p:last-child{font-size:12px;line-height:1.6;color:var(--muted);margin:0}
+html body #root .steel-image-large{display:block;width:100%;height:auto;max-height:65svh;object-fit:contain;border-radius:12px;background:var(--stone)}
+@media(max-width:700px){html body #root .steel-image-dialog{width:calc(100% - 24px);padding:22px 16px}html body #root .steel-image-caption{padding-right:46px;margin-bottom:16px}html body #root .steel-image-caption h2{font-size:20px}html body #root .steel-image-large{max-height:58svh;border-radius:10px}}
