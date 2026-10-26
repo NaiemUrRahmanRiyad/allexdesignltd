@@ -1,5 +1,9 @@
 # ALLEX website
 
+Temporary live website: https://allexdesignltd-preview.netlify.app
+
+GitHub continuous deployment is connected to `codex/netlify-deployment`. Commit changes in this local project and run `git push`; Netlify builds and publishes that branch automatically. Build settings are in `netlify.toml`. Mail credentials are stored in Netlify environment settings and the ignored local `.env`, never in the repository. Keep the temporary site separate from the official domain until the planned hosting replacement. Use `npm run build:official` for that later move.
+
 One React + Vite application, with a Netlify Function using Nodemailer and Gmail SMTP. No separate static JavaScript application.
 
 ## Local development
