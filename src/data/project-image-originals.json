@@ -1,0 +1,202 @@
+[
+  {
+    "thumbnail": "/interior-projects/selected/parliament-1.webp",
+    "fullSrc": "/interior-projects/originals/parliament-1.jpg",
+    "width": 594,
+    "height": 418,
+    "page": 23,
+    "imageIndex": 0,
+    "difference": 4.575,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/parliament-2.webp",
+    "fullSrc": "/interior-projects/originals/parliament-2.jpg",
+    "width": 595,
+    "height": 446,
+    "page": 33,
+    "imageIndex": 1,
+    "difference": 5.074,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/dot-birth-1.webp",
+    "fullSrc": "/interior-projects/originals/dot-birth-1.jpg",
+    "width": 590,
+    "height": 419,
+    "page": 36,
+    "imageIndex": 0,
+    "difference": 4.754,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/dot-birth-2.webp",
+    "fullSrc": "/interior-projects/originals/dot-birth-2.jpg",
+    "width": 595,
+    "height": 442,
+    "page": 38,
+    "imageIndex": 0,
+    "difference": 5.186,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/bateel-1.webp",
+    "fullSrc": "/interior-projects/originals/bateel-1.jpg",
+    "width": 594,
+    "height": 378,
+    "page": 44,
+    "imageIndex": 0,
+    "difference": 5.338,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/bateel-2.webp",
+    "fullSrc": "/interior-projects/originals/bateel-2.jpg",
+    "width": 594,
+    "height": 460,
+    "page": 44,
+    "imageIndex": 1,
+    "difference": 5.281,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/brac-it-1.webp",
+    "fullSrc": "/interior-projects/originals/brac-it-1.jpg",
+    "width": 594,
+    "height": 396,
+    "page": 48,
+    "imageIndex": 1,
+    "difference": 5.03,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/brac-it-2.webp",
+    "fullSrc": "/interior-projects/originals/brac-it-2.jpg",
+    "width": 594,
+    "height": 396,
+    "page": 50,
+    "imageIndex": 0,
+    "difference": 4.041,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/pepsico-1.webp",
+    "fullSrc": "/interior-projects/originals/pepsico-1.jpg",
+    "width": 594,
+    "height": 396,
+    "page": 64,
+    "imageIndex": 0,
+    "difference": 5.591,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/pepsico-2.webp",
+    "fullSrc": "/interior-projects/originals/pepsico-2.jpg",
+    "width": 595,
+    "height": 437,
+    "page": 66,
+    "imageIndex": 1,
+    "difference": 5.561,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/pathao-1.webp",
+    "fullSrc": "/interior-projects/originals/pathao-1.jpg",
+    "width": 587,
+    "height": 341,
+    "page": 71,
+    "imageIndex": 0,
+    "difference": 4.758,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/pathao-2.webp",
+    "fullSrc": "/interior-projects/originals/pathao-2.jpg",
+    "width": 595,
+    "height": 386,
+    "page": 70,
+    "imageIndex": 1,
+    "difference": 4.05,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/adsteel/portfolio/pathao-1.webp",
+    "fullSrc": "/adsteel/originals/pathao-1.jpg",
+    "width": 743,
+    "height": 419,
+    "page": 14,
+    "imageIndex": 2,
+    "difference": 5.626,
+    "source": "AD Steel 2026 supplied PDF"
+  },
+  {
+    "thumbnail": "/adsteel/portfolio/pathao-2.webp",
+    "fullSrc": "/adsteel/originals/pathao-2.jpg",
+    "width": 743,
+    "height": 419,
+    "page": 15,
+    "imageIndex": 2,
+    "difference": 5.538,
+    "source": "AD Steel 2026 supplied PDF"
+  },
+  {
+    "thumbnail": "/adsteel/portfolio/padma-1.webp",
+    "fullSrc": "/adsteel/originals/padma-1.jpg",
+    "width": 908,
+    "height": 419,
+    "page": 16,
+    "imageIndex": 4,
+    "difference": 5.967,
+    "source": "AD Steel 2026 supplied PDF"
+  },
+  {
+    "thumbnail": "/adsteel/portfolio/padma-2.webp",
+    "fullSrc": "/adsteel/originals/padma-2.jpg",
+    "width": 935,
+    "height": 419,
+    "page": 17,
+    "imageIndex": 4,
+    "difference": 6.149,
+    "source": "AD Steel 2026 supplied PDF"
+  },
+  {
+    "thumbnail": "/adsteel/portfolio/transcom-1.webp",
+    "fullSrc": "/adsteel/originals/transcom-1.jpg",
+    "width": 735,
+    "height": 419,
+    "page": 19,
+    "imageIndex": 1,
+    "difference": 6.09,
+    "source": "AD Steel 2026 supplied PDF"
+  },
+  {
+    "thumbnail": "/adsteel/portfolio/transcom-2.webp",
+    "fullSrc": "/adsteel/originals/transcom-2.jpg",
+    "width": 717,
+    "height": 454,
+    "page": 19,
+    "imageIndex": 0,
+    "difference": 4.593,
+    "source": "AD Steel 2026 supplied PDF"
+  },
+  {
+    "thumbnail": "/adsteel/portfolio/tajmuk-1.webp",
+    "fullSrc": "/adsteel/originals/tajmuk-1.jpg",
+    "width": 1087,
+    "height": 419,
+    "page": 21,
+    "imageIndex": 0,
+    "difference": 4.937,
+    "source": "AD Steel 2026 supplied PDF"
+  },
+  {
+    "thumbnail": "/adsteel/portfolio/tajmuk-2.webp",
+    "fullSrc": "/adsteel/originals/tajmuk-2.jpg",
+    "width": 1115,
+    "height": 419,
+    "page": 21,
+    "imageIndex": 1,
+    "difference": 6.149,
+    "source": "AD Steel 2026 supplied PDF"
+  }
+]

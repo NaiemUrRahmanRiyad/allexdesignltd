@@ -1,4 +1,6 @@
 import { useEffect, useRef } from 'react';
+import originals from '../data/project-image-originals.json';
+const originalImages = new Map(originals.map(image => [image.thumbnail, image]));
 import { isDialogBackdropClick } from '../../shared/contact-ui.js';
 
 export default function ProjectImageDialog({photo,onClose,titleId}) {
@@ -9,6 +11,7 @@ export default function ProjectImageDialog({photo,onClose,titleId}) {
  },[photo]);
  return <dialog ref={dialog} className="product-dialog project-image-dialog" aria-labelledby={titleId} onClose={onClose} onClick={event=>{if(isDialogBackdropClick(event,dialog.current))dialog.current.close();}}>
   <button type="button" className="dialog-close" aria-label="Close project image" onClick={()=>dialog.current.close()}>×</button>
-  {photo&&<><div className="project-image-caption"><p className="eyebrow">{photo.type}</p><h2 id={titleId}>{photo.title}</h2><p>Photo {photo.index+1} of {photo.count}</p></div><img className="project-image-large" src={photo.src} alt={`${photo.title} — photo ${photo.index+1}`} width={photo.width} height={photo.height} decoding="async"/></>}
+  {photo&&<><div className="project-image-caption"><p className="eyebrow">{photo.type}</p><h2 id={titleId}>{photo.title}</h2><p>Photo {photo.index+1} of {photo.count}</p></div><img className="project-image-large" src={originalImages.get(photo.src)?.fullSrc || photo.src} alt={`${photo.title} — photo ${photo.index+1}`} width={photo.width} height={photo.height} decoding="async"/></>}
  </dialog>;
 }
+
