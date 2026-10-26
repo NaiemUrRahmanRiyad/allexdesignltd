@@ -1,0 +1,24 @@
+.interior-projects-heading{margin-bottom:30px;max-width:780px}
+.interior-projects-heading .eyebrow{font-size:clamp(24px,3vw,36px);font-weight:600;line-height:1.4;letter-spacing:1px;color:var(--brass);margin-bottom:18px}
+.interior-projects-heading h2 em{color:var(--brass)}
+.interior-projects-heading>p:last-child{color:var(--muted);line-height:1.85;margin-top:16px}
+.interior-project-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding:clamp(14px,2.5vw,28px);border:1px solid var(--line);border-radius:26px;background:linear-gradient(125deg,#f7f4e9e8,#dce6d6e0,#cadbd5e6)}
+.interior-project-card{overflow:hidden;border:1px solid var(--line);border-radius:20px;background:linear-gradient(135deg,#ffffffc9,#e3ece1b8);box-shadow:0 14px 32px #273a2510;min-width:0}
+.interior-project-gallery{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:10px 10px 0}
+.interior-project-image{display:block;aspect-ratio:4/3;overflow:hidden;border-radius:10px;background:var(--stone)}
+.interior-project-image:first-child{grid-column:1/-1;aspect-ratio:16/10}
+.interior-project-image:last-child{grid-column:1/-1;aspect-ratio:16/7}
+.interior-project-image img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.interior-project-image:hover img,.interior-project-image:focus-visible img{transform:scale(1.04)}
+.interior-project-image:focus-visible{outline:3px solid var(--brass);outline-offset:2px}
+.interior-project-copy{padding:24px 20px}
+.interior-project-copy h3{margin:0 0 10px;font-size:clamp(21px,2vw,27px);line-height:1.3;overflow-wrap:anywhere}
+.interior-project-copy p{font-size:14px;line-height:1.85;color:var(--muted);text-align:justify;text-align-last:start;margin:0}
+.interior-project-copy .interior-project-scope{font-size:12px;font-weight:600;color:var(--brass);text-align:start;margin-bottom:12px}
+.interior-project-actions{display:flex;justify-content:center;margin-top:28px}
+.interior-project-actions button{min-height:48px;padding:14px 24px;display:flex;gap:20px;align-items:center}
+html[data-theme=dark] .interior-project-list{background:linear-gradient(125deg,#344332e8,#1d382ee8,#173529ef)}
+html[data-theme=dark] .interior-project-card{background:linear-gradient(135deg,#324936e0,#203c32d9)}
+@media(max-width:1100px){.interior-project-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.interior-project-list{grid-template-columns:1fr;gap:18px}.interior-project-copy{padding:20px 16px}}
+@media(prefers-reduced-motion:reduce){.interior-project-image img{transition:none}}

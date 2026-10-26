@@ -1,0 +1,33 @@
+{
+  "document": "AD Steel Profile - 2026 GM Redesign V27 Latter Size SQ.pdf",
+  "source": "User-supplied AD Steel corporate profile 2026",
+  "projects": {
+    "Pathao Central Warehouse": [
+      14,
+      15,
+      22
+    ],
+    "Padma Railway Project - Base Camp": [
+      17
+    ],
+    "Transcom Electronics": [
+      19,
+      22
+    ],
+    "Tajmuk Packaging Factory": [
+      21
+    ],
+    "GPH International School": [
+      18
+    ],
+    "Idris Ali Madbor Institute": [
+      18,
+      22
+    ]
+  },
+  "processing": "Embedded original images extracted and encoded as WebP; no generated details.",
+  "visualizations": [
+    "GPH International School",
+    "Idris Ali Madbor Institute"
+  ]
+}

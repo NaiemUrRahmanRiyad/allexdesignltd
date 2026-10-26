@@ -1,0 +1,162 @@
+{
+  "source": "Interior  Profile.pdf, supplied by ALLEX",
+  "pageNumbering": "PDF page index, starting at 1",
+  "images": "Embedded original images extracted and encoded as WebP; no generated details. Portfolio may include design visualizations.",
+  "projects": [
+    {
+      "id": "parliament",
+      "company": "National Parliament House",
+      "scope": "North Plaza office renovation",
+      "scopeBn": "উত্তর প্লাজা অফিস সংস্কার",
+      "description": "The North Plaza office renovation brings together reception and lounge areas, office zones, workstations, training facilities and a conference room. Timber finishes and geometric screens give the spaces a coordinated character, while generous circulation connects everyday work areas with shared facilities.",
+      "descriptionBn": "উত্তর প্লাজার অফিস সংস্কারে রিসেপশন ও লাউঞ্জ, অফিস জোন, ওয়ার্কস্টেশন, প্রশিক্ষণকক্ষ এবং কনফারেন্স রুম অন্তর্ভুক্ত। কাঠের ফিনিশ ও জ্যামিতিক স্ক্রিন জায়গাগুলোকে সামঞ্জস্যপূর্ণ পরিচয় দিয়েছে। প্রশস্ত চলাচলের পথ দৈনন্দিন কাজের জায়গার সঙ্গে যৌথ সুবিধাগুলোকে যুক্ত করেছে।",
+      "images": [
+        {
+          "src": "/interior-projects/selected/parliament-1.webp",
+          "alt": "National Parliament House — North Plaza office renovation 1",
+          "width": 594,
+          "height": 418
+        },
+        {
+          "src": "/interior-projects/selected/parliament-2.webp",
+          "alt": "National Parliament House — North Plaza office renovation 2",
+          "width": 595,
+          "height": 446
+        }
+      ],
+      "sourcePages": [
+        23,
+        33
+      ]
+    },
+    {
+      "id": "dot-birth",
+      "company": "Dot Birth",
+      "scope": "Creative office interior",
+      "scopeBn": "ক্রিয়েটিভ অফিস ইন্টেরিয়র",
+      "description": "Designed for a Dhaka-based creative company, this office combines a welcoming reception and waiting area with shared workstations, a dry kitchen and dining space. Planted partitions, open shelving and a restrained material palette reflect the brand’s creative identity while supporting teamwork and informal interaction.",
+      "descriptionBn": "ঢাকাভিত্তিক একটি ক্রিয়েটিভ প্রতিষ্ঠানের এই অফিসে রিসেপশন ও অপেক্ষার জায়গার সঙ্গে শেয়ারড ওয়ার্কস্টেশন, ড্রাই কিচেন ও ডাইনিং স্পেস রাখা হয়েছে। গাছের পার্টিশন, খোলা তাক এবং সংযত রং ও উপকরণের ব্যবহার ব্র্যান্ডের সৃজনশীল পরিচয় তুলে ধরে। বিন্যাসটি দলগত কাজ ও অনানুষ্ঠানিক আলোচনার উপযোগী।",
+      "images": [
+        {
+          "src": "/interior-projects/selected/dot-birth-1.webp",
+          "alt": "Dot Birth — Creative office interior 1",
+          "width": 590,
+          "height": 419
+        },
+        {
+          "src": "/interior-projects/selected/dot-birth-2.webp",
+          "alt": "Dot Birth — Creative office interior 2",
+          "width": 595,
+          "height": 442
+        }
+      ],
+      "sourcePages": [
+        36,
+        38
+      ]
+    },
+    {
+      "id": "bateel",
+      "company": "Bateel",
+      "scope": "Retail showroom interior",
+      "scopeBn": "রিটেইল শোরুম ইন্টেরিয়র",
+      "description": "This international gourmet brand’s showroom pairs illuminated display counters with wall shelving and warm, coordinated finishes. The interior reflects Bateel’s refined retail identity, giving its dates and gourmet products a clear visual focus. The arrangement balances product presentation with a welcoming browsing experience.",
+      "descriptionBn": "আন্তর্জাতিক গুরমে ব্র্যান্ডের এই শোরুমে আলোকিত ডিসপ্লে কাউন্টার, দেয়ালের তাক এবং উষ্ণ রঙের সামঞ্জস্যপূর্ণ ফিনিশ ব্যবহার করা হয়েছে। ইন্টেরিয়রটি Bateel-এর পরিশীলিত পরিচয় তুলে ধরে এবং খেজুর ও গুরমে পণ্যকে দৃশ্যমান গুরুত্ব দেয়। পণ্য প্রদর্শন ও স্বাচ্ছন্দ্যে ঘুরে দেখার অভিজ্ঞতা মিলিয়ে বিন্যাসটি সাজানো।",
+      "images": [
+        {
+          "src": "/interior-projects/selected/bateel-1.webp",
+          "alt": "Bateel — Retail showroom interior 1",
+          "width": 594,
+          "height": 378
+        },
+        {
+          "src": "/interior-projects/selected/bateel-2.webp",
+          "alt": "Bateel — Retail showroom interior 2",
+          "width": 594,
+          "height": 460
+        }
+      ],
+      "sourcePages": [
+        44
+      ]
+    },
+    {
+      "id": "brac-it",
+      "company": "BRAC IT",
+      "scope": "Office & meeting spaces",
+      "scopeBn": "অফিস ও মিটিং স্পেস",
+      "description": "The BRAC IT office portfolio includes open workstations, conference and meeting rooms, training facilities, executive rooms, and a dining area with a dry kitchen. Glass partitions and a consistent finish palette connect the spaces visually, while separate rooms accommodate discussions, training and focused work alongside the main office floor.",
+      "descriptionBn": "BRAC IT-এর অফিস পোর্টফোলিওতে উন্মুক্ত ওয়ার্কস্টেশন, কনফারেন্স ও মিটিং রুম, প্রশিক্ষণকক্ষ, নির্বাহী কক্ষ এবং ড্রাই কিচেনসহ ডাইনিং এরিয়া রয়েছে। কাচের পার্টিশন ও সামঞ্জস্যপূর্ণ ফিনিশ জায়গাগুলোর মধ্যে দৃশ্যগত সংযোগ রাখে। মূল অফিসের পাশাপাশি পৃথক কক্ষগুলো আলোচনা, প্রশিক্ষণ ও মনোযোগী কাজের সুযোগ দেয়।",
+      "images": [
+        {
+          "src": "/interior-projects/selected/brac-it-1.webp",
+          "alt": "BRAC IT — Office & meeting spaces 1",
+          "width": 594,
+          "height": 396
+        },
+        {
+          "src": "/interior-projects/selected/brac-it-2.webp",
+          "alt": "BRAC IT — Office & meeting spaces 2",
+          "width": 594,
+          "height": 396
+        }
+      ],
+      "sourcePages": [
+        48,
+        50
+      ]
+    },
+    {
+      "id": "pepsico",
+      "company": "PepsiCo",
+      "scope": "Office interior",
+      "scopeBn": "অফিস ইন্টেরিয়র",
+      "description": "The PepsiCo office combines open desk arrangements with dedicated meeting spaces. Colourful branded graphics introduce a lively identity to the work floor, balanced by neutral furniture and ceiling finishes. Glazed meeting areas and clearly defined desk rows give the interior a connected, organized feel.",
+      "descriptionBn": "PepsiCo-এর অফিসে খোলামেলা ডেস্ক বিন্যাসের সঙ্গে পৃথক মিটিং স্পেস রাখা হয়েছে। রঙিন ব্র্যান্ড গ্রাফিক্স কর্মস্থলে প্রাণবন্ত পরিচয় এনেছে, যার সঙ্গে নিরপেক্ষ রঙের আসবাব ও ছাদের ফিনিশ ভারসাম্য রাখে। কাচঘেরা মিটিং এরিয়া ও সুস্পষ্ট ডেস্কের সারি ইন্টেরিয়রকে সংযুক্ত ও গোছানো অনুভূতি দেয়।",
+      "images": [
+        {
+          "src": "/interior-projects/selected/pepsico-1.webp",
+          "alt": "PepsiCo — Office interior 1",
+          "width": 594,
+          "height": 396
+        },
+        {
+          "src": "/interior-projects/selected/pepsico-2.webp",
+          "alt": "PepsiCo — Office interior 2",
+          "width": 595,
+          "height": 437
+        }
+      ],
+      "sourcePages": [
+        64,
+        66
+      ]
+    },
+    {
+      "id": "pathao",
+      "company": "Pathao",
+      "scope": "Office & lounge interior",
+      "scopeBn": "অফিস ও লাউঞ্জ ইন্টেরিয়র",
+      "description": "The Pathao office and lounge portfolio brings together reception, lounge seating, a CEO room and a boardroom. Curved seating, flowing ceiling lines and integrated warm lighting create a distinctive shared-space identity. Brand accents and varied seating arrangements give the lounge an inviting setting for waiting and informal conversations.",
+      "descriptionBn": "Pathao-এর অফিস ও লাউঞ্জ পোর্টফোলিওতে রিসেপশন, লাউঞ্জ সিটিং, সিইও কক্ষ ও বোর্ডরুম রয়েছে। বাঁকানো আসন, ছাদের প্রবাহমান রেখা এবং সমন্বিত উষ্ণ আলো যৌথ জায়গাগুলোকে স্বতন্ত্র পরিচয় দেয়। ব্র্যান্ডের উপাদান ও বৈচিত্র্যময় বসার বিন্যাস অপেক্ষা ও অনানুষ্ঠানিক আলোচনার জন্য স্বাচ্ছন্দ্যময় পরিবেশ তৈরি করে।",
+      "images": [
+        {
+          "src": "/interior-projects/selected/pathao-1.webp",
+          "alt": "Pathao — Office & lounge interior 1",
+          "width": 587,
+          "height": 341
+        },
+        {
+          "src": "/interior-projects/selected/pathao-2.webp",
+          "alt": "Pathao — Office & lounge interior 2",
+          "width": 595,
+          "height": 386
+        }
+      ],
+      "sourcePages": [
+        70,
+        71
+      ]
+    }
+  ]
+}

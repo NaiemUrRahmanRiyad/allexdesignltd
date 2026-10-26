@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('/fonts/dm-sans-latin.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('/fonts/manrope-latin.woff2') format('woff2');
+}
+
+.hero-slide {
+  transform: none;
+  transition: opacity 800ms ease;
+  will-change: auto;
+}
+
+.hero-slide.is-active {
+  transform: none;
+}
+
+html body #root .typewriter.effect-paused > span[aria-hidden="true"]::after,
+html.card-glow-paused body #root .typewriter > span[aria-hidden="true"]::after {
+  animation-play-state:paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-slide {
+    transition: none;
+  }
+}

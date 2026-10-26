@@ -1,0 +1,33 @@
+/* Shared reading rhythm for descriptive content, excluding controls and labels. */
+html body #root :is(.about-copy,.about-approach>p:not(.eyebrow),.studio-purpose article>p,.service-card-copy>p,.furniture-brand-copy>p,.furniture-purpose article>p,.furniture-purpose>div>p,.furniture-feedback-summary,.adsteel-intro>div>p:not(.eyebrow),.adsteel-capabilities article>p,.adsteel-project-heading>div>p:not(.eyebrow),.adsteel-example-copy>p:not(.eyebrow):not(.adsteel-photo-credit),.contact-invitation>p,.product-dialog-copy>p:not(.eyebrow)) {
+  text-align:justify;
+  text-align-last:start;
+  text-wrap:wrap;
+  line-height:1.9;
+  word-spacing:normal;
+  letter-spacing:normal;
+  overflow-wrap:break-word;
+  hyphens:auto;
+  margin-top:0;
+  margin-bottom:18px;
+}
+html[lang=bn] body #root :is(.about-copy,.about-approach>p:not(.eyebrow),.studio-purpose article>p,.service-card-copy>p,.furniture-brand-copy>p,.furniture-purpose p,.adsteel-intro p:not(.eyebrow),.adsteel-capabilities article>p,.adsteel-example-copy>p:not(.eyebrow),.product-dialog-copy>p:not(.eyebrow)){line-height:2}
+html body #root :is(.service-card-copy,.studio-purpose article,.adsteel-capabilities article,.adsteel-example-copy,.furniture-brand-copy,.product-dialog-copy) h3,
+html body #root .adsteel-example-copy h4{margin-top:0;margin-bottom:14px;line-height:1.4;text-wrap:balance}
+html body #root :is(.studio-purpose article,.adsteel-capabilities article)>p:last-child{margin-bottom:0}
+html body #root :is(.service-intro,.project-intro)>p{line-height:1.85;text-align:justify;text-align-last:start;margin-top:0;margin-bottom:0}
+html body #root :is(.project-card-details p,.project-process-steps p){line-height:1.75;margin:0;text-align:start;overflow-wrap:break-word}
+html body #root .furniture-feedback-summary{font-size:clamp(17px,1.65vw,21px);line-height:1.8}
+html body #root :is(.furniture-reference-note,.furniture-feedback-note){line-height:1.8}
+html body #root .contact-invitation>p{margin:0}
+html body #root :is(.about-intro,.furniture-intro,.adsteel-intro)>div{min-width:0}
+html body #root :is(.service-card-actions,.product-dialog-actions,.adsteel-actions){row-gap:12px}
+@media(max-width:700px){
+  html body #root :is(.about-copy,.service-card-copy>p,.furniture-brand-copy>p,.adsteel-intro>div>p:not(.eyebrow),.adsteel-capabilities article>p,.adsteel-example-copy>p:not(.eyebrow),.product-dialog-copy>p:not(.eyebrow)){font-size:14px;line-height:1.85;margin-bottom:16px}
+  html body #root .furniture-feedback-summary{font-size:18px;line-height:1.85}
+}
+html body #root .adsteel-planning-note{padding-top:14px;margin-top:14px;border-top:1px solid var(--line);font-size:13px;line-height:1.9;text-align:justify;text-align-last:start}
+html body #root .adsteel-capabilities article{display:flex;flex-direction:column}
+html body #root .adsteel-example-card{display:flex;flex-direction:column}
+html body #root .adsteel-example-copy{display:flex;flex-direction:column;flex:1;min-width:0}
+html body #root .adsteel-example-copy>button{margin-top:auto}

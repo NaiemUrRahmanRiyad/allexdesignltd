@@ -1,0 +1,98 @@
+:root {
+  --glass-button-bg: radial-gradient(ellipse at 84% 110%, #bca17680, transparent 48%), radial-gradient(ellipse at 65% 0%, #9bb7a36b, transparent 56%), linear-gradient(135deg, #ffffffdf, #f3f0e6c9);
+  --glass-button-ink: #243d30;
+  --glass-button-border: #9b997f9c;
+  --glass-button-shadow: inset 0 1px 1px #fffffff2, inset 0 -1px 2px #92846430, 0 4px 0 #b4aa932b, 0 10px 22px #413b2924;
+  --glass-button-hover: radial-gradient(ellipse at 85% 100%, #dac495a6, transparent 55%), linear-gradient(135deg, #edf5e9f5, #b5cdb4eb);
+}
+html[data-theme=dark] {
+  --glass-button-bg: radial-gradient(ellipse at 85% 100%, #b5956266, transparent 50%), radial-gradient(ellipse at 65% 0%, #779d8466, transparent 55%), linear-gradient(135deg, #354f43ed, #24382ee6);
+  --glass-button-ink: #fff6e3;
+  --glass-button-border: #c6c2a185;
+  --glass-button-shadow: inset 0 1px 1px #ffffff59, inset 0 -1px 2px #0005, 0 4px 0 #07180e80, 0 10px 24px #0005;
+  --glass-button-hover: radial-gradient(ellipse at 85% 100%, #b99c6a99, transparent 55%), linear-gradient(135deg, #577563f5, #365541f5);
+}
+/* Keep image previews as images; style their separate action controls. */
+html body #root :is(button:not(.product-open):not(.project-preview):not(.hero-slide-indicator), a.button, .hero-cta-primary, .language-switch button) {
+  background: var(--glass-button-bg);
+  color: var(--glass-button-ink);
+  border: 1px solid var(--glass-button-border);
+  border-radius: 999px;
+  box-shadow: var(--glass-button-shadow);
+  backdrop-filter: blur(16px) saturate(135%);
+  -webkit-backdrop-filter: blur(16px) saturate(135%);
+  font-weight: 600;
+  text-shadow: 0 1px 1px #ffffff12;
+  transition: background .25s ease, box-shadow .25s ease, transform .25s ease, border-color .25s ease;
+}
+html body #root :is(button:not(.product-open):not(.project-preview):not(.hero-slide-indicator), a.button, .hero-cta-primary, .language-switch button):hover:not(:disabled) {
+  background: var(--glass-button-hover);
+  color: var(--glass-button-ink);
+  border-color: var(--brass);
+  box-shadow: var(--glass-button-shadow), 0 12px 24px #697f4a24;
+  transform: translateY(-2px);
+}
+html body #root :is(button, a.button, .hero-cta-primary, .language-switch button):focus-visible {
+  outline: 3px solid var(--brass);
+  outline-offset: 4px;
+}
+html body #root :is(button:not(.product-open):not(.project-preview):not(.hero-slide-indicator), a.button, .hero-cta-primary, .language-switch button):active:not(:disabled) { transform: translateY(1px); }
+html body #root :is(.furniture-filters button[aria-pressed=true], .language-switch button[aria-pressed=true]) {
+  background: linear-gradient(135deg, #58715eea, #253f31f5);
+  color: #fff8e9;
+  border-color: #bba273;
+}
+html body #root :is(.service-card-link, .furniture-card-actions button, .adsteel-example-copy button, .furniture-empty button) {
+  min-height: 44px;
+  padding: 11px 18px;
+  text-align: center;
+  justify-content: center;
+  line-height: 1.5;
+}
+html body #root .furniture-card-actions { gap: 10px; flex-wrap: wrap; }
+html body #root .hero-slide-indicator {
+  background: #fffdf2b8;
+  border: 1px solid #a99c7e;
+  box-shadow: inset 0 1px 2px #fff, 0 3px 8px #17251d40;
+  backdrop-filter: blur(10px);
+}
+html body #root .hero-slide-indicator.is-active { background: #bea36e; border-color: #fff1d3; }
+html body #root button:disabled { opacity: .6; cursor: wait; }
+@media (prefers-reduced-motion: reduce) {
+  html body #root :is(button, a.button, .hero-cta-primary, .language-switch button) { transition: none; }
+  html body #root :is(button, a.button, .hero-cta-primary, .language-switch button):is(:hover,:active) { transform: none; }
+}
+
+html body #root .language-switch{gap:5px;padding:4px;border-radius:999px;background:var(--paper)}html body #root .language-switch button{min-height:36px;padding:7px 12px;font-size:11px;line-height:1.4;cursor:pointer}html body #root .language-switch button[aria-pressed=true]:hover{background:linear-gradient(135deg,#58715eea,#253f31f5);color:#fff8e9}@media(max-width:560px){html body #root .language-switch button{padding:6px 9px;font-size:10px;min-height:34px}.header-tools{gap:6px}}
+html body #root .language-switch button[aria-pressed=true][type=button]{background:linear-gradient(135deg,#58715eea,#253f31f5);color:#fff8e9;border-color:#bba273;box-shadow:inset 0 1px 1px #ffffff66,0 3px 8px #253f3133}
+/* Stronger contrast for the main navigation call to action. */
+html body #root nav#navigation button.contact-nav-trigger {
+  background: linear-gradient(135deg, #355b46eF, #173c2bf5 65%, #254531f2);
+  color: #fff7e6;
+  border-color: #779477;
+  box-shadow: inset 0 1px 1px #ffffff59, inset 0 -1px 2px #071b1266, 0 4px 0 #17332233, 0 9px 20px #183b2b38;
+}
+html body #root nav#navigation button.contact-nav-trigger:hover {
+  background: linear-gradient(135deg, #416e51f5, #244e36f5 65%, #536241f2);
+  color: #fff9ed;
+  border-color: #c2a975;
+}
+html[data-theme=dark] body #root nav#navigation button.contact-nav-trigger {
+  border-color: #9cb794;
+  box-shadow: inset 0 1px 1px #ffffff59, 0 4px 0 #07180e80, 0 9px 20px #0005;
+}
+/* Navigation cards and options follow the shared glass palette. */
+html body #root header nav#navigation,
+html body #root header .header-tools {
+  background: var(--glass-button-bg);
+  border: 1px solid var(--glass-button-border);
+  box-shadow: var(--glass-button-shadow);
+  backdrop-filter: blur(18px) saturate(135%);
+  -webkit-backdrop-filter: blur(18px) saturate(135%);
+}
+html body #root header .header-tools { padding: 5px; border-radius: 999px; }
+
+
+
+html body #root header nav#navigation > a:focus-visible { outline: 3px solid var(--brass); outline-offset: 3px; }
+@media(max-width:560px){html body #root header .header-tools{padding:3px;gap:4px}html body #root header .language-switch{padding:2px;gap:3px}}

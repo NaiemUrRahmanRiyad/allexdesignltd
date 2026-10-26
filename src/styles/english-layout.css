@@ -1,0 +1,51 @@
+/* Compact English-only header and consistent card content alignment. */
+html body #root header .header-tools{gap:8px;flex-shrink:0;justify-content:center}
+html body #root :is(.service-directory-grid,.interior-project-list,.adsteel-example-grid,.furniture-grid,.studio-purpose){align-items:stretch}
+html body #root .interior-project-card{display:flex;flex-direction:column}
+html body #root .interior-project-gallery{flex-shrink:0}
+html body #root .interior-project-copy{flex:1;min-width:0}
+html body #root .interior-project-copy>div{min-width:0}
+html body #root .interior-project-copy p:last-child{margin-bottom:0}
+html body #root .studio-purpose article{display:flex;flex-direction:column;gap:0;min-width:0}
+html body #root .studio-purpose article h3{margin-bottom:12px}
+html body #root .studio-purpose article p{margin:0}
+html body #root .furniture-card h3{margin-block:16px 10px}
+html body #root .furniture-card-actions{padding-top:12px}
+html body #root .service-card-actions{padding-top:14px}
+@media(min-width:1101px){html body #root header .header-tools{border-radius:50%;padding:5px}}
+@media(max-width:560px){html body #root .studio-purpose article{padding:20px}html body #root .furniture-card-actions{gap:10px;padding-top:10px}}
+/* Add a little breathing room to the desktop glass header only. */
+@media(min-width:1101px){
+ html body #root header{height:88px;min-height:88px;padding-block:14px}
+ html body #root header nav#navigation{padding:6px;gap:3px}
+ html body #root header .header-tools{padding:7px}
+ html body #root .home-screen{height:calc(100svh - 104px)}
+ html body #root header nav#navigation>:is(a,.contact-nav-trigger),
+ html body #root header .nav-services summary{min-height:46px;padding-inline:16px;font-size:14px;line-height:1.4;letter-spacing:.1px}
+ html body #root header nav#navigation>a{font-weight:500}
+ html body #root header .nav-services summary{font-weight:500;gap:8px}
+ html body #root header .brand span{font-size:10px;line-height:1.6;letter-spacing:.9px;max-width:136px}
+}
+@media(max-width:1100px){
+ html body #root header nav#navigation>a,
+ html body #root header .nav-services summary{font-size:15px;line-height:1.5;min-height:46px}
+ html body #root header .nav-services-options a{font-size:14px;line-height:1.6}
+}
+/* Keep the original logo and give the company descriptor a deliberate two-line lockup. */
+html body #root header .brand{display:inline-flex;align-items:center;gap:12px;min-width:0;width:auto;max-width:100%}
+html body #root header .brand>.brand-name{display:block;flex:0 1 auto;max-width:none;margin:0;font-size:10px;font-weight:600;line-height:1.7;letter-spacing:.65px;color:var(--ink);white-space:nowrap}
+html body #root header .brand img{display:block;flex-shrink:0;object-fit:contain;object-position:center}
+@media(min-width:1101px){
+ html body #root header{padding-block:13px}
+ html body #root header .brand img{width:64px;height:60px}
+}
+@media(min-width:561px) and (max-width:1100px){
+ html body #root header .brand img{width:56px;height:54px}
+ html body #root header .brand>.brand-name{font-size:9.5px;letter-spacing:.55px}
+}
+@media(max-width:560px){
+ html body #root header{grid-template-columns:minmax(0,1fr) auto}
+ html body #root header .brand{width:auto;min-width:0;gap:8px}
+ html body #root header .brand img{width:48px;height:48px}
+ html body #root header .brand>.brand-name{font-size:9.5px;line-height:1.7;letter-spacing:.35px}
+}

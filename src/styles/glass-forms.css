@@ -1,0 +1,66 @@
+html body #root :is(.contact-dialog,.product-dialog) {
+  background:radial-gradient(ellipse at 100% 0%,#d6dfcba6,transparent 65%),linear-gradient(145deg,#faf5e8f5,#e8dec9f2);
+  color:#293c30;
+  border:1px solid #a6a185;
+  border-radius:24px;
+  box-shadow:inset 0 1px 1px #fff,0 28px 90px #142b2259;
+  backdrop-filter:blur(24px) saturate(130%);
+  -webkit-backdrop-filter:blur(24px) saturate(130%);
+}
+html body #root :is(.contact-dialog,.product-dialog)::backdrop{background:#12251db3;backdrop-filter:blur(8px)}
+html body #root .contact-dialog .field label{color:#304533;font-weight:600}
+html body #root .contact-dialog .field :is(input,textarea,select),
+html body #root .furniture-search-control {
+  background:linear-gradient(135deg,#fffdf4ed,#f2f0e1e6);
+  color:#263b2c;
+  border:1px solid #9fAA90;
+  border-radius:12px;
+  box-shadow:inset 0 2px 5px #32482e0d,0 1px 0 #fff;
+}
+html body #root .contact-dialog .field :is(input,textarea,select):focus{outline:2px solid #7b8754;outline-offset:2px;border-color:#647448}
+html body #root .contact-dialog .field :is(input,textarea)::placeholder{color:#69715e;opacity:1}
+html body #root .contact-dialog .field [aria-invalid=true]{border-color:#a73a2e;outline-color:#a73a2e}
+html body #root .contact-dialog .attachment-field input[type=file]{border-style:dashed}
+html body #root .contact-dialog .attachment-list li{background:#fff9e5a6;border-color:#aaa282;border-radius:12px}
+html[data-theme=dark] body #root :is(.contact-dialog,.product-dialog){background:radial-gradient(ellipse at 100% 0%,#60734b80,transparent 65%),linear-gradient(145deg,#304435f7,#202f25f7);color:#f7f0de;border-color:#95a582;box-shadow:inset 0 1px 1px #ffffff40,0 28px 90px #0009}
+html[data-theme=dark] body #root .contact-dialog .field label{color:#f0ead5}
+html[data-theme=dark] body #root .contact-dialog .field :is(input,textarea,select),
+html[data-theme=dark] body #root .furniture-search-control{background:linear-gradient(135deg,#1c2d22f2,#2d3d2ceF);color:#fff4de;border-color:#82946f;box-shadow:inset 0 2px 5px #0003}
+html[data-theme=dark] body #root .contact-dialog .field :is(input,textarea)::placeholder{color:#bdc9af}
+html[data-theme=dark] body #root .contact-dialog .attachment-list li{background:#304332;border-color:#82946f}
+@media(max-width:560px){html body #root :is(.contact-dialog,.product-dialog){border-radius:18px}}
+.consultation-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;padding:20px;margin:0 0 10px;min-width:0;border:1px solid var(--brass);border-radius:16px;background:#ffffff19}
+.consultation-fields legend{padding:0 8px;font-size:14px;font-weight:600}
+.consultation-fields .field{min-width:0;grid-column:auto}
+.consultation-fields select{width:100%;min-height:50px;padding:12px;font:inherit;font-size:14px}
+.consultation-fields>p{grid-column:1/-1;font-size:11px;line-height:1.7;color:var(--muted);margin:0}
+@media(max-width:560px){.consultation-fields{grid-template-columns:1fr;padding:16px;gap:16px}.consultation-fields input{max-width:100%;box-sizing:border-box;min-width:0}}
+.form-whatsapp{border-top:1px solid var(--line);padding-top:22px;display:flex;flex-direction:column;align-items:flex-start;gap:12px;min-width:0}
+.form-whatsapp>p{margin:0;font-size:13px;line-height:1.7;color:var(--ink)}
+.form-whatsapp .button{max-width:100%;white-space:normal;gap:18px;font-size:13px;line-height:1.6;padding:14px 20px}
+.form-whatsapp small{font-size:10px;line-height:1.7;color:var(--muted)}
+html body #root .contact-dialog select#consultation-workType {
+  appearance:none;
+  -webkit-appearance:none;
+  min-height:54px;
+  padding:14px 44px 14px 16px;
+  border:1px solid #9cae88;
+  border-radius:14px;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%235b734b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m7 10 5 5 5-5'/%3E%3C/svg%3E"),linear-gradient(135deg,#fffdf3f2,#e4ead5ed);
+  background-position:right 15px center,center;
+  background-repeat:no-repeat;
+  background-size:20px,100% 100%;
+  color:#2b432f;font-size:14px;font-weight:500;line-height:1.6;cursor:pointer;
+  box-shadow:inset 0 1px 1px #fff,0 4px 12px #31462b12;
+  transition:border-color .2s ease,box-shadow .2s ease;
+}
+html body #root .contact-dialog select#consultation-workType:hover{border-color:#9c814d;box-shadow:inset 0 1px 1px #fff,0 5px 15px #31462b24}
+html body #root .contact-dialog select#consultation-workType:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+html body #root .contact-dialog select#consultation-workType option{background:#f5f2e6;color:#2b432f;padding:12px;font-size:14px}
+html[data-theme=dark] body #root .contact-dialog select#consultation-workType{color:#f3ecd7;border-color:#8da477;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23d7c38d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m7 10 5 5 5-5'/%3E%3C/svg%3E"),linear-gradient(135deg,#334a36,#253929)}
+html[data-theme=dark] body #root .contact-dialog select#consultation-workType option{background:#2a3e2d;color:#f3ecd7}
+/* Validation must remain visible above the shared glass field and select rules. */
+html body #root .contact-dialog .field :is(input,textarea,select)[aria-invalid=true],
+html body #root .contact-dialog select#consultation-workType[aria-invalid=true]{border-color:#a73a2e;outline-color:#a73a2e}
+html[data-theme=dark] body #root .contact-dialog .field :is(input,textarea,select)[aria-invalid=true],
+html[data-theme=dark] body #root .contact-dialog select#consultation-workType[aria-invalid=true]{border-color:#f0a18c;outline-color:#f0a18c}

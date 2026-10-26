@@ -1,0 +1,25 @@
+.faq-launcher{position:fixed;right:22px;bottom:100px;z-index:90;padding:14px 18px;font-size:13px;min-height:48px;cursor:pointer}
+.faq-dialog{position:fixed;inset:auto 20px 20px auto;margin:0;width:440px;max-width:calc(100vw - 32px);height:690px;max-height:calc(100dvh - 40px);padding:0;border:1px solid var(--brass);border-radius:22px;background:linear-gradient(140deg,#faf5e8f7,#dce3cff7);color:var(--ink);box-shadow:0 24px 80px #17281d66;backdrop-filter:blur(22px)}
+.faq-dialog[open]{display:flex;flex-direction:column}.faq-dialog::backdrop{background:#16251c66;backdrop-filter:blur(4px)}
+.faq-header{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:20px;border-bottom:1px solid var(--line);flex-shrink:0}.faq-header h2{font:600 24px/1.4 Manrope,sans-serif;margin:0}.faq-header p{font-size:11px;line-height:1.6;margin:5px 0 0;color:var(--muted)}.faq-header button{width:38px;height:38px;font-size:24px;flex-shrink:0;cursor:pointer}
+.faq-log{padding:18px 20px;overflow-y:auto;flex:1;min-height:100px;overscroll-behavior:contain}.faq-log p{font-size:13px;line-height:1.8;margin:0;white-space:pre-line;overflow-wrap:anywhere}.faq-answer{padding:14px;border:1px solid var(--line);border-radius:14px;background:#fff9e8b3}.faq-question{margin:16px 0 10px auto!important;padding:10px 14px;background:#33513e;color:#fff7e8;border-radius:14px;max-width:90%;width:fit-content}.faq-answer a{display:inline-block;font-size:12px;font-weight:600;margin-top:10px;text-decoration:underline;color:var(--ink)}
+.faq-topics{display:flex;gap:8px;flex-wrap:wrap;padding:12px 18px;border-top:1px solid var(--line);max-height:145px;overflow-y:auto;flex-shrink:0}.faq-topics button{padding:8px 11px;min-height:36px;font-size:11px;cursor:pointer}
+.faq-form{display:flex;gap:8px;padding:12px 18px 8px;flex-shrink:0}.faq-form input{min-width:0;width:100%;border:1px solid #9da98c;border-radius:12px;background:#fffdf1;color:#263e2d;padding:12px;font:inherit;font-size:14px}.faq-form button{padding:10px 14px;cursor:pointer}.faq-human{display:block;text-align:center;padding:8px 18px 18px;font-size:11px;line-height:1.6;color:var(--ink);text-decoration:underline;flex-shrink:0}
+html[data-theme=dark] .faq-dialog{background:linear-gradient(140deg,#324735f7,#223427f7)}html[data-theme=dark] .faq-answer{background:#263b2b;border-color:#7c8969}
+html[data-theme=dark] body #root .faq-form input{background:#1c2d22;color:#f5f0e4;border-color:#82946f;color-scheme:dark}
+html[data-theme=dark] body #root .faq-form input::placeholder{color:#bdc9af;opacity:1}
+html[data-theme=dark] body #root .faq-form input:focus-visible{outline:2px solid #d5b47d;outline-offset:2px;border-color:#d5b47d}
+@media(max-width:560px){.faq-launcher{right:16px;bottom:94px;padding:11px 15px}.faq-dialog{inset:auto 12px 12px;width:calc(100vw - 24px);max-width:none;max-height:calc(100dvh - 24px)}.faq-header{padding:16px}.faq-log{padding:14px}.faq-topics{max-height:120px;padding:10px 14px}}
+.faq-dialog{box-sizing:border-box;overflow:hidden}
+.faq-header>div{min-width:0;flex:1}
+html body #root .faq-header h2{font-family:Manrope,sans-serif;font-size:23px;font-weight:600;line-height:1.5;letter-spacing:1px;word-spacing:5px;margin:0;text-wrap:nowrap}
+html body #root .faq-header button{display:grid;place-items:center;width:36px;height:36px;min-width:36px;min-height:36px;max-width:36px;padding:0;margin:0;font-size:24px;font-weight:400;line-height:1;flex:0 0 36px;cursor:pointer}
+.faq-header{padding:18px 20px;gap:16px}
+.faq-header p{margin-top:6px;line-height:1.7}
+.faq-log{width:100%;box-sizing:border-box;scrollbar-width:thin}
+.faq-topics{box-sizing:border-box;scrollbar-width:thin}
+.faq-form{box-sizing:border-box;width:100%;align-items:center}
+.faq-form input{box-sizing:border-box;min-height:46px}
+html body #root .faq-form button{min-height:46px;flex-shrink:0;font-size:12px;line-height:1.4}
+@media(max-width:560px){html body #root .faq-dialog{inset:auto 12px 12px auto;width:calc(100vw - 24px);height:min(690px,calc(100dvh - 24px));max-height:calc(100dvh - 24px);margin:0}.faq-header{padding:16px}.faq-topics{max-height:110px}.faq-human{font-size:11px}}
+.faq-shortcuts{display:flex;gap:8px;flex-wrap:wrap;padding:10px 18px;flex-shrink:0;border-top:1px solid var(--line)}.faq-shortcuts button,.faq-book{padding:9px 12px;min-height:38px;font-size:11px;cursor:pointer}.faq-book{margin-top:12px}.faq-dialog .faq-topics{max-height:105px}.faq-dialog .faq-log{min-height:90px}@media(max-height:650px){.faq-dialog .faq-topics{max-height:70px}.faq-shortcuts{padding-block:6px}}

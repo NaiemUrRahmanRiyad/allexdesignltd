@@ -1,0 +1,20 @@
+html body #root .service-directory-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}
+html body #root .interior-project-card[hidden],html body #root #additional-client-logos[hidden]{display:none!important}
+html body #root .service-directory-grid .service-card-copy>p{min-height:0}
+html body #root .service-directory-grid .service-card-actions{display:flex;flex-direction:column;align-items:stretch;gap:14px}
+html body #root .service-directory-grid .service-card-actions>.furniture-text-link{align-self:center;text-align:center;font-size:12px;line-height:1.7}
+html body #root .service-overview.section{padding-block:64px}
+html body #root .adsteel-detail.service-overview{margin-top:0;border-top:1px solid var(--line)}
+.overview-ranges{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 30px}
+.overview-ranges>span{padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:#ffffff20;color:var(--ink);font-size:12px;line-height:1.7}
+.overview-selection-label{font-size:13px;font-weight:600;letter-spacing:.4px;color:var(--brass);margin:0 0 20px}
+.overview-next-step{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px;margin-top:28px;padding-top:24px;border-top:1px solid var(--line)}
+.overview-next-step>p{flex:1 1 260px;max-width:560px;margin:0;color:var(--muted);font-size:14px;line-height:1.85}
+.overview-actions{display:flex;align-items:center;flex-wrap:wrap;gap:16px;min-width:0}
+.overview-actions .button{max-width:100%;white-space:normal;line-height:1.6;gap:18px}
+.overview-actions .button>span{flex-shrink:0}
+html body #root .service-overview .interior-project-copy{padding:22px 20px}
+html body #root .service-overview .adsteel-project-heading{margin-top:0}
+@media(max-width:1100px){html body #root .service-directory-grid{gap:18px}.overview-next-step{align-items:flex-start;flex-direction:column}}
+@media(max-width:800px){html body #root .service-directory-grid{grid-template-columns:1fr}.overview-actions{width:100%}}
+@media(max-width:700px){html body #root .service-overview.section{padding-block:46px}.overview-ranges{gap:8px;margin:20px 0 24px}.overview-ranges>span{padding:7px 11px;font-size:11px}.overview-actions{align-items:stretch;flex-direction:column;gap:14px}.overview-actions .button{width:100%;justify-content:space-between}.overview-next-step>p{flex-basis:auto}.overview-actions .furniture-text-link{align-self:flex-start}}

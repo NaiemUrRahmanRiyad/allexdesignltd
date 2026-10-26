@@ -1,0 +1,45 @@
+/* Section labels share a readable hierarchy across both languages. */
+.service-intro .eyebrow,
+.furniture-intro .eyebrow,
+.adsteel-intro .eyebrow,
+.project-intro .eyebrow,
+.clients-heading .eyebrow,
+.contact > div > .eyebrow {
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: clamp(1px, .15vw, 2px);
+  margin-bottom: 20px;
+  text-wrap: balance;
+}
+.project-process-heading .eyebrow,
+.furniture-feedback-heading .eyebrow,
+.adsteel-project-heading .eyebrow {
+  font-size: clamp(20px, 2.2vw, 28px);
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+  text-wrap: balance;
+}
+.about .eyebrow,
+.furniture-samples > .eyebrow,
+.furniture-purpose .eyebrow {
+  font-size: clamp(17px, 1.6vw, 22px);
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-wrap: balance;
+}
+html body #root .about-intro h2{font-size:clamp(25px,2.6vw,38px);line-height:1.35;letter-spacing:-.6px;margin-bottom:24px}
+html body #root .about-intro .about-copy{font-size:15px;line-height:1.9;margin:0 0 18px}
+html body #root .about-intro .about-copy:last-child{margin-bottom:0}
+@media(max-width:560px){html body #root .about-intro h2{font-size:27px;letter-spacing:-.3px}html body #root .about-intro .about-copy{font-size:14px;line-height:1.9}}
+html body #root .about-intro{align-items:start;column-gap:clamp(28px,4vw,64px)}
+html body #root .about-intro>.about-intro-copy{min-width:0;max-width:780px;width:100%;text-align:left}
+html body #root .about-intro h2{text-align:left;text-wrap:balance;margin-top:0}
+html body #root .about-intro .about-copy{text-align:start;max-width:68ch;word-spacing:normal;letter-spacing:normal;overflow-wrap:break-word;text-wrap:pretty}
+html[lang=bn] body #root .about-intro .about-copy{line-height:2;max-width:64ch}
+html body #root .about-kicker{align-self:start;min-width:0}
+@media(max-width:850px){html body #root .about-intro{grid-template-columns:1fr;row-gap:28px}html body #root .about-intro>.about-intro-copy{max-width:none}html body #root .about-intro .about-copy{max-width:none}}
+html body #root .about-intro .about-copy,html[lang=bn] body #root .about-intro .about-copy{text-align:justify;text-align-last:start;text-wrap:wrap;hyphens:auto}

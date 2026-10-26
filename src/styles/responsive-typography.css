@@ -1,0 +1,57 @@
+/* Final text rules: descriptions, headings and controls have separate alignment. */
+html{ -webkit-text-size-adjust:100%;text-size-adjust:100% }
+html body #root :is(button,input,textarea,select){font-family:inherit}
+html body #root :is(h1,h2,h3,h4,p,li,label,small){word-break:normal}
+html body #root :is(.about-copy,.about-approach>p:not(.eyebrow),.studio-purpose article>p,.service-card-copy>p,.furniture-brand-copy>p,.interior-projects-heading>p:not(.eyebrow),.interior-project-copy p:not(.interior-project-scope),.adsteel-intro>div>p:not(.eyebrow),.adsteel-example-copy>p:not(.eyebrow),.service-intro>p,.project-intro>p,.overview-next-step>p,.contact-invitation>p,.product-dialog-copy>p:not(.eyebrow)){
+  font-size:clamp(.875rem,.82rem + .18vw,.9375rem);
+  line-height:1.85;text-align:justify;text-align-last:start;
+  text-wrap:wrap;word-spacing:normal;letter-spacing:normal;
+  overflow-wrap:break-word;hyphens:auto;
+}
+html[lang=bn] body #root :is(.about-copy,.about-approach>p:not(.eyebrow),.studio-purpose article>p,.service-card-copy>p,.furniture-brand-copy>p,.interior-projects-heading>p:not(.eyebrow),.interior-project-copy p,.adsteel-intro>div>p:not(.eyebrow),.adsteel-example-copy>p:not(.eyebrow),.service-intro>p,.project-intro>p,.overview-next-step>p,.contact-invitation>p,.product-dialog-copy>p:not(.eyebrow)){
+  line-height:2;hyphens:none;letter-spacing:normal;
+}
+html body #root :is(.service-card-copy,.interior-project-copy,.adsteel-example-copy,.product-dialog-copy,.studio-purpose article){min-width:0}
+html body #root :is(.service-card-copy h3,.interior-project-copy h3,.adsteel-example-copy h4,.product-dialog-copy h2,.studio-purpose h3,.furniture-card h3){
+  text-align:start;text-wrap:balance;line-height:1.45;overflow-wrap:break-word;hyphens:none;
+}
+html[lang=bn] body #root :is(.service-card-copy h3,.interior-project-copy h3,.adsteel-example-copy h4,.product-dialog-copy h2,.studio-purpose h3,.furniture-card h3){line-height:1.65;letter-spacing:0}
+html body #root :is(.interior-project-scope,.furniture-reference-label,.project-card-details p,.project-process-steps p,.contact-detail,.field label,.form-status,.attachment-field>p,.form-whatsapp>small){
+  text-align:start;word-spacing:normal;letter-spacing:normal;line-height:1.75;overflow-wrap:break-word;
+}
+html body #root :is(.faq-answer,.faq-question){text-align:start;line-height:1.8;overflow-wrap:break-word;word-spacing:normal}
+html body #root :is(.button,.hero-cta-primary,.hero-cta-secondary,.contact-cta,.furniture-card-actions button,.furniture-card-actions a,.clients-actions button,.faq-book,.faq-form button,.faq-topics button,.faq-shortcuts button){
+  text-align:center;text-align-last:auto;word-spacing:normal;letter-spacing:normal;
+  white-space:normal;overflow-wrap:break-word;word-break:normal;hyphens:none;
+  line-height:1.5;font-size:clamp(.8125rem,.78rem + .12vw,.875rem);max-width:100%;min-width:0;
+}
+html body #root :is(.button,.hero-cta-primary,.hero-cta-secondary,.contact-cta){display:inline-flex;align-items:center;justify-content:center;gap:clamp(10px,1.5vw,18px);height:auto;min-height:48px}
+html body #root :is(.button,.contact-cta)>span[aria-hidden=true]{flex-shrink:0;line-height:1}
+html[lang=bn] body #root :is(.button,.hero-cta-primary,.hero-cta-secondary,.contact-cta,.furniture-card-actions button,.clients-actions button,.faq-book){line-height:1.7;letter-spacing:0}
+html body #root :is(.service-card-actions,.furniture-card-actions,.product-dialog-actions,.overview-actions){min-width:0;max-width:100%;row-gap:12px}
+html body #root .furniture-card-actions{align-items:stretch;flex-wrap:wrap}
+html body #root .furniture-card-actions :is(button,a){display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;flex:1 1 auto}
+html body #root .service-card-copy{display:flex;flex-direction:column;flex:1}
+html body #root .service-card-actions{margin-top:auto}
+html body #root .field label{line-height:1.65;margin-bottom:10px}
+html body #root :is(.field input,.field select,.field textarea){line-height:1.6;min-width:0;max-width:100%;text-align:start}
+html body #root .field textarea{resize:vertical}
+html body #root :is(.contact-detail-value,.footer-brand>div,.footer-copyright){min-width:0;overflow-wrap:break-word}
+@media(max-width:700px){
+  html body #root .contact-dialog :is(input,select,textarea){font-size:1rem}
+  html body #root .contact-dialog select#consultation-workType{font-size:1rem}
+  html body #root :is(.product-dialog-copy h2,.interior-project-copy h3,.adsteel-example-copy h4){font-size:clamp(1.125rem,1rem + 1vw,1.5rem)}
+  html body #root .service-card-copy h3{font-size:clamp(1.25rem,1.1rem + .65vw,1.5rem)}
+  html body #root .furniture-card h3{font-size:clamp(.9375rem,.85rem + .6vw,1.125rem)}
+  html body #root :is(.project-process-steps p,.studio-purpose p,.faq-answer){font-size:.875rem}
+  html body #root .faq-answer p{font-size:.875rem;line-height:1.8}
+  html body #root :is(.field label,.attachment-field>p,.form-whatsapp>small,.form-status){font-size:.8125rem}
+}
+@media(max-width:560px){
+  html body #root .furniture-card-actions{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+  html body #root .furniture-card-actions :is(button,a){width:100%}
+  html body #root .overview-actions{align-items:stretch}
+  html body #root .overview-actions>.button{width:100%}
+  html body #root .contact-invitation .contact-cta{width:100%;padding-inline:16px}
+  html body #root .site-footer .footer-brand p{font-size:.8125rem;line-height:1.7}
+}

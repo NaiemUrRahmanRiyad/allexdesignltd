@@ -1,0 +1,2 @@
+// Runs before styles/React to prevent a bright flash on dark-mode reloads.
+(() => { let preference; try { preference = localStorage.getItem('allex-theme'); } catch {} const theme = preference === 'dark' || preference === 'light' ? preference : window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; document.documentElement.dataset.theme = theme; document.documentElement.style.colorScheme = theme; })();

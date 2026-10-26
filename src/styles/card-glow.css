@@ -1,0 +1,23 @@
+/* Original orbit appearance and timing, active only while visible. */
+@property --card-glow-angle { syntax:'<angle>'; initial-value:0deg; inherits:false; }
+html body #root .card-reveal { position:relative; overflow:visible; }
+html body #root .service-card .service-card-image { overflow:hidden; border-top-left-radius:inherit; border-top-right-radius:inherit; }
+html body #root .service-card .service-card-copy { border-bottom-left-radius:inherit; border-bottom-right-radius:inherit; }
+@supports (mask-composite:exclude) {
+  html body #root .card-reveal.glow-ready::after {
+    content:''; position:absolute; inset:-2px; z-index:3; padding:1.5px; border-radius:inherit; pointer-events:none;
+    background:conic-gradient(from var(--card-glow-angle),transparent 0% 44%,#527f6940 58%,#699b80c9 73%,#b38b45 86%,#f3deb0 93%,transparent 100%);
+    mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask-composite:exclude;
+    filter:drop-shadow(0 0 3px #7fab9099) drop-shadow(0 0 5px #c9ad7373);opacity:1;
+  }
+  html[data-theme=dark] body #root .card-reveal.glow-ready::after { opacity:1; background:conic-gradient(from var(--card-glow-angle),transparent 0% 44%,#8ab49b40 58%,#9ac8abc9 73%,#d7b974 86%,#fff0c9 93%,transparent 100%);filter:drop-shadow(0 0 3px #96bfa499) drop-shadow(0 0 6px #d2bb8773); }
+  html body #root .card-reveal.glow-ready:nth-child(3n+2)::after { --card-glow-angle:120deg;--glow-initial-delay:-3s; }
+  html body #root .card-reveal.glow-ready:nth-child(3n)::after { --card-glow-angle:240deg;--glow-initial-delay:-6s; }
+  @media(prefers-reduced-motion:no-preference) {
+    html.motion-ready body #root .card-reveal.glow-ready::after { animation-name:card-border-orbit;animation-duration:7s;animation-timing-function:linear;animation-iteration-count:infinite;animation-play-state:paused;animation-delay:var(--glow-delay,var(--glow-initial-delay,0s)); }
+    html.motion-ready:not(.card-glow-paused) body #root .card-reveal.glow-ready.is-visible::after { animation-play-state:running; }
+  }
+}
+@keyframes card-border-orbit { from { --card-glow-angle:0deg; } to { --card-glow-angle:360deg; } }
+@media(forced-colors:active) { html body #root .card-reveal.glow-ready::after { display:none; } }
+

@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.netlify/
+.env
+.env.*
+!.env.example
+.tmp-furniture/
+.ssr/
+.tmp-adsteel/
+
+.tmp-performance/
+.tmp-netlify-cli/
+.tmp-netlify-functions/
+deployment/
+/output/
+/tmp/
+/*-preview.png

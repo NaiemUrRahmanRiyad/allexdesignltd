@@ -1,0 +1,11 @@
+[build]
+command = "npm run build:netlify"
+publish = "dist"
+functions = "netlify/functions"
+[build.environment]
+NODE_VERSION = "22"
+ALLEX_DEPLOYMENT = "netlify"
+[functions]
+node_bundler = "esbuild"
+# Legacy redirects including retired Bengali homepage URLs are generated into dist/_redirects.
+# Netlify serves dist/404.html with HTTP 404 for other unknown URLs.

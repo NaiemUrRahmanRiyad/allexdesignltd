@@ -1,0 +1,32 @@
+html body #root .project-card {
+  background: radial-gradient(ellipse at 100% 0%,#d4dfc680,transparent 65%),linear-gradient(145deg,#f6f0e1e6,#e0d6bef0);
+  border-color:#b5b397;
+  border-radius:20px;
+  box-shadow:inset 0 1px 1px #ffffffd9,0 12px 28px #5b503324;
+  backdrop-filter:blur(16px) saturate(120%);
+  -webkit-backdrop-filter:blur(16px) saturate(120%);
+}
+html body #root .project-card:nth-child(even){background:radial-gradient(ellipse at 100% 0%,#dfcba580,transparent 65%),linear-gradient(145deg,#f5eedfe6,#dce2cbeb)}
+html body #root .project-card-heading{background:transparent;border-color:#b9ad8b80}
+html body #root .project-card h3{color:#2b4031}
+html body #root .project-card-details{border-color:#b7ae9080}
+html body #root .project-card:hover{border-color:#a08751;box-shadow:inset 0 1px 1px #fff,0 18px 34px #5b503330}
+html body #root .project-card .project-media{border-radius:12px;overflow:hidden;border:1px solid #b4ac8c80}
+html body #root .project-card .video-link{color:#354d38;border-color:#a99b72}
+html[data-theme=dark] body #root .project-card{background:radial-gradient(ellipse at 100% 0%,#5a6f4059,transparent 65%),linear-gradient(145deg,#354939ed,#25362af2);border-color:#798368;box-shadow:inset 0 1px 1px #ffffff30,0 12px 28px #0004}
+html[data-theme=dark] body #root .project-card:nth-child(even){background:radial-gradient(ellipse at 100% 0%,#8970444d,transparent 65%),linear-gradient(145deg,#3d4935ed,#2e3528f2)}
+html[data-theme=dark] body #root .project-card h3{color:#f4eedc}
+html[data-theme=dark] body #root .project-card .video-link{color:#e0d3aa}
+html body #root .project-grid{align-items:stretch}
+html body #root .project-card{display:grid;grid-template-rows:minmax(84px,auto) minmax(70px,auto) auto auto;align-content:start;min-width:0}
+html body #root .project-card-heading{align-items:center;min-width:0;margin:0;padding:10px 4px}
+html body #root .project-card-heading>div{min-width:0}
+html body #root .project-card-heading h3{min-height:2.9em;line-height:1.45}
+html body #root .project-card-details{align-content:start;margin:0;padding:8px 4px 14px;min-width:0}
+html body #root .project-card .project-media{width:100%;aspect-ratio:16/9;align-self:start;min-width:0}
+html body #root .project-card .project-media :is(iframe,.project-preview){width:100%;height:100%;aspect-ratio:16/9}
+html body #root .project-card .video-link{margin:0;min-height:56px;align-self:end;align-items:center;gap:12px}
+@supports(grid-template-rows:subgrid){
+  html body #root .project-card{grid-row:span 4;grid-template-rows:subgrid;row-gap:0}
+}
+@media(max-width:620px){html body #root .project-card{grid-row:auto;grid-template-rows:auto auto auto auto}html body #root .project-card-details:empty{display:none}}

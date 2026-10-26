@@ -1,0 +1,26 @@
+html body #root .about-overview-card{
+  padding:clamp(24px,4vw,56px);
+  border:1px solid #adb49a;
+  border-radius:28px;
+  background:radial-gradient(ellipse at 95% 0%,#d2dfc68c,transparent 55%),linear-gradient(140deg,#fffdf2e6,#eee6d3d9);
+  box-shadow:inset 0 1px 1px #fff,0 18px 45px #354a2921;
+  backdrop-filter:blur(16px) saturate(115%);
+  -webkit-backdrop-filter:blur(16px) saturate(115%);
+  min-width:0;
+}
+html body #root .about-overview-card .about-section-heading{margin-bottom:36px}
+html body #root .about-overview-card .about-intro{padding-bottom:30px;column-gap:clamp(24px,3.5vw,48px)}
+html body #root .about-overview-card .about-intro>.about-intro-copy{max-width:none}
+html body #root .about-overview-card .about-copy{max-width:none}
+html body #root .about-overview-card .about-story{margin-top:30px}
+html body #root .about-overview-card .about-highlights{margin-top:30px}
+/* Read the company introduction first; keep the existing desktop sidebar. */
+html body #root .about-overview-card .about-intro{grid-template-areas:"expertise copy"}
+html body #root .about-intro>.about-intro-copy{grid-area:copy;min-width:0}
+html body #root .about-intro>.about-kicker{grid-area:expertise;min-width:0}
+html body #root .about-linked-expertise>a>div{min-width:0;overflow-wrap:break-word}
+@media(max-width:900px){html body #root .about-overview-card .about-intro{grid-template-columns:minmax(0,1fr);grid-template-areas:"copy" "expertise";row-gap:26px}html body #root .about-intro>.about-kicker{width:100%}html body #root .about-overview-card .about-intro .about-linked-expertise{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}html body #root .about-linked-expertise .about-linked-label{grid-column:1/-1}}
+@media(max-width:420px){html body #root .about-overview-card .about-intro .about-linked-expertise{grid-template-columns:minmax(0,1fr);gap:10px}html body #root .about-overview-card .about-linked-expertise>a{grid-template-columns:28px minmax(0,1fr);align-items:center;gap:12px;padding:12px}html body #root .about-linked-expertise a div>span{margin-top:2px}}
+html[data-theme=dark] body #root .about-overview-card{background:radial-gradient(ellipse at 95% 0%,#71835233,transparent 55%),linear-gradient(140deg,#304636ed,#203629eb);border-color:#7e8d6a;box-shadow:inset 0 1px 1px #ffffff33,0 18px 45px #0004}
+@media(max-width:700px){html body #root .about-overview-card{padding:24px 20px;border-radius:22px}html body #root .about-overview-card .about-section-heading{margin-bottom:26px}}
+@media(max-width:420px){html body #root .about-overview-card{padding:22px 16px;border-radius:18px}html body #root .about-overview-card .about-section-heading h2{font-size:24px}html body #root .about-overview-card .about-intro h2{font-size:25px}}

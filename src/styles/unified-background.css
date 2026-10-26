@@ -1,0 +1,46 @@
+:root {
+  --page-grid-color:#8c926012;
+  --page-base:#e3ece8;
+  --page-wash:linear-gradient(110deg,#f8fbf8 0%,#e1ece7 35%,#c5dcd5 72%,#b3d0c9 100%);
+}
+html[data-theme=dark] {
+  --page-grid-color:#c4d4a112;
+  --page-base:#192d21;
+  --page-wash:linear-gradient(110deg,#344737 0%,#263e2d 18%,#1d3526 58%,#13291d 100%);
+}
+html body,
+html[data-theme=dark] body {
+  background-color:var(--page-base);
+  background-image:linear-gradient(var(--page-grid-color) 1px,transparent 1px),linear-gradient(90deg,var(--page-grid-color) 1px,transparent 1px),var(--page-wash);
+  background-size:72px 72px,72px 72px,100% 100%;
+  background-attachment:scroll,scroll,fixed;
+}
+/* One page canvas keeps grid lines continuous between sections. */
+html body #root :is(main,.section,.about,.services,.furniture,.projects,.clients,.contact,.hero-typewriter,.home-screen,.site-footer),
+html[data-theme=dark] body #root :is(main,.section,.about,.services,.furniture,.projects,.clients,.contact,.hero-typewriter,.home-screen,.site-footer) {
+  background:transparent;
+}
+html body #root :is(.section,.site-footer){border-color:var(--line)}
+/* Remove section overlays so the same gradient and grid show throughout. */
+html body #root .about.section::before,
+html[data-theme=dark] body #root .about.section::before{background:none}
+/* Use the same page gradient behind Home, About and AD Steel. */
+html body #root .ambient-light{display:none}
+html body #root :is(.home-screen,.home-screen .hero-typewriter,.about.section,.adsteel-detail),
+html[data-theme=dark] body #root :is(.home-screen,.home-screen .hero-typewriter,.about.section,.adsteel-detail){background:transparent}
+html body #root :is(.home-screen .hero-typewriter,.about.section){
+  background-image:linear-gradient(90deg,#ffffff80 0%,#ffffff26 16%,transparent 35%,transparent 65%,#ffffff26 84%,#ffffff80 100%);
+}
+html[data-theme=dark] body #root :is(.home-screen .hero-typewriter,.about.section){
+  background-image:linear-gradient(90deg,#f0f5e91f 0%,#f0f5e909 16%,transparent 35%,transparent 65%,#f0f5e909 84%,#f0f5e91f 100%);
+}
+html body #root footer.site-footer{
+  background:linear-gradient(110deg,#e1e6d5,#c7d5bd 65%,#b9cbb2);
+  border-top:2px solid #a18a58;
+  box-shadow:0 -8px 24px #344b3212,inset 0 1px 0 #ffffffb3;
+}
+html[data-theme=dark] body #root footer.site-footer{
+  background:linear-gradient(110deg,#14271c,#102219 65%,#0d1d15);
+  border-top-color:#ac9769;
+  box-shadow:0 -8px 24px #0003,inset 0 1px 0 #c5d4a11a;
+}

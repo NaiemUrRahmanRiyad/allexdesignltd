@@ -1,0 +1,357 @@
+[
+  {
+    "asset": "https://pathao.com/logo.svg",
+    "id": "pathao",
+    "name": "Pathao",
+    "site": "https://pathao.com/",
+    "image": "/clients/pathao.svg"
+  },
+  {
+    "asset": "https://www.cefalo.com/hubfs/logo/logo-color.svg",
+    "id": "cefalo",
+    "name": "Cefalo",
+    "site": "https://www.cefalo.com/",
+    "image": "/clients/cefalo.svg"
+  },
+  {
+    "asset": "https://www.beximco.com/themes/beximco/assets/images/beximco-logo-small.png",
+    "id": "beximco",
+    "name": "BEXIMCO",
+    "site": "https://www.beximco.com/",
+    "image": "/clients/beximco.png"
+  },
+  {
+    "asset": "https://www.aristopharma.com/upload/logo/1705807569.png",
+    "id": "aristopharma",
+    "name": "Aristopharma",
+    "site": "https://www.aristopharma.com/",
+    "image": "/clients/aristopharma.png"
+  },
+  {
+    "asset": "https://www.transcombd.com/logo.png",
+    "id": "transcom",
+    "name": "Transcom",
+    "site": "https://www.transcombd.com/",
+    "image": "/clients/transcom.png"
+  },
+  {
+    "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Daraz_Logo.png",
+    "id": "daraz",
+    "name": "Daraz",
+    "site": "https://daraz.com/",
+    "image": "/clients/daraz.png",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Daraz_Logo.png"
+  },
+  {
+    "asset": "https://www.ewubd.edu/themes/east-west-university/assets/default/images/logo.png",
+    "id": "east-west",
+    "name": "East West University",
+    "site": "https://www.ewubd.edu/",
+    "image": "/clients/east-west.png"
+  },
+  {
+    "asset": "https://gemcongroup.com/wp-content/uploads/2018/04/logo_gemcon.png",
+    "id": "gemcon",
+    "name": "Gemcon Group",
+    "site": "https://gemcongroup.com/",
+    "image": "/clients/gemcon.png"
+  },
+  {
+    "asset": "https://www.jotun.com/globalassets-b2b/.com/jotun-logo.svg",
+    "id": "jotun",
+    "name": "Jotun",
+    "site": "https://www.jotun.com/",
+    "image": "/clients/jotun.svg"
+  },
+  {
+    "asset": "https://cdn.usbair.com/website/public/images/home_page/homepage_logo.png.svg",
+    "id": "us-bangla",
+    "name": "US-Bangla Airlines",
+    "site": "https://www.usbair.com/",
+    "image": "/clients/us-bangla.svg"
+  },
+  {
+    "asset": "https://akhp.com.bd/wp-content/uploads/2022/01/Final-AKH-Logo-for-Menu.png",
+    "id": "akh",
+    "name": "AKH Group",
+    "site": "https://akhp.com.bd/",
+    "image": "/clients/akh.png"
+  },
+  {
+    "asset": "https://crowncement.com/wp-content/uploads/2025/06/logo.svg",
+    "id": "crown-cement",
+    "name": "Crown Cement",
+    "site": "https://crowncement.com/",
+    "image": "/clients/crown-cement.svg"
+  },
+  {
+    "asset": "https://amlbd.com/storage/logo/logo.png",
+    "id": "abdul-monem",
+    "name": "Abdul Monem Ltd.",
+    "site": "https://amlbd.com/",
+    "image": "/clients/abdul-monem.png"
+  },
+  {
+    "asset": "https://pu.edu.bd/images/1777885523_logo-white.png",
+    "id": "presidency",
+    "name": "Presidency University",
+    "site": "https://pu.edu.bd/",
+    "image": "/clients/presidency.png"
+  },
+  {
+    "asset": "https://emkcenter.org/wp-content/uploads/2025/12/Logo-V3-01-1.png",
+    "id": "emk",
+    "name": "EMK Center",
+    "site": "https://emkcenter.org/",
+    "image": "/clients/emk.png"
+  },
+  {
+    "name": "Bangladesh Jatiya Sangsad",
+    "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_the_Jatiya_Sangsad.svg",
+    "id": "parliament",
+    "source": "https://commons.wikimedia.org/wiki/File:Emblem_of_the_Jatiya_Sangsad.svg",
+    "site": "https://www.parliament.gov.bd/",
+    "image": "/clients/parliament.svg",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "site": "https://en.wikipedia.org/wiki/BKash",
+    "name": "bKash",
+    "image": "/clients/bkash.png",
+    "id": "bkash",
+    "asset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/BKash-Bangla-Logo-01.png/250px-BKash-Bangla-Logo-01.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+  },
+  {
+    "site": "https://en.wikipedia.org/wiki/BRAC_(organisation)",
+    "name": "BRAC",
+    "image": "/clients/brac.png",
+    "id": "brac",
+    "asset": "https://thumb.wikimedia.org/wikipedia/en/thumb/a/a4/BRAC_logo.svg/250px-BRAC_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+  },
+  {
+    "site": "https://en.wikipedia.org/wiki/Pepsi",
+    "name": "Pepsi",
+    "image": "/clients/pepsi.png",
+    "id": "pepsi",
+    "asset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Pepsi_2023.svg/250px-Pepsi_2023.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+  },
+  {
+    "site": "https://en.wikipedia.org/wiki/Aarong",
+    "name": "Aarong",
+    "image": "/clients/aarong.png",
+    "id": "aarong",
+    "asset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Aarong.png/250px-Aarong.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+  },
+  {
+    "site": "https://en.wikipedia.org/wiki/Bikroy",
+    "name": "Bikroy",
+    "image": "/clients/bikroy.png",
+    "id": "bikroy",
+    "asset": "https://thumb.wikimedia.org/wikipedia/en/thumb/5/5c/Bikroy-logo.svg/250px-Bikroy-logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+  },
+  {
+    "site": "https://en.wikipedia.org/wiki/Jamuna_Group",
+    "name": "Jamuna Group",
+    "image": "/clients/jamuna.png",
+    "id": "jamuna",
+    "asset": "https://upload.wikimedia.org/wikipedia/commons/5/57/Jamuna_Group.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail_unscaled"
+  },
+  {
+    "site": "https://en.wikipedia.org/wiki/Commercial_Bank_of_Ceylon",
+    "name": "Commercial Bank",
+    "image": "/clients/commercial-bank.png",
+    "id": "commercial-bank",
+    "asset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Commercial_Bank_logo.svg/250px-Commercial_Bank_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+  },
+  {
+    "image": "/clients/gazi.png",
+    "id": "gazi",
+    "asset": "https://www.gazi.com/wp-content/uploads/2022/04/Gazi-Group-logo.png",
+    "name": "Gazi Group",
+    "site": "https://www.gazi.com/"
+  },
+  {
+    "image": "/clients/abul-khair.png",
+    "id": "abul-khair",
+    "asset": "https://www.abulkhairgroup.com/AKG.png",
+    "name": "Abul Khair Group",
+    "site": "https://www.abulkhairgroup.com/"
+  },
+  {
+    "id": "united-hospital",
+    "name": "United Hospital",
+    "site": "https://seeklogo.com/vector-logo/438875/united-hospital",
+    "asset": "https://images.seeklogo.com/logo-png/43/1/united-hospital-logo-png_seeklogo-438875.png",
+    "image": "/clients/united-hospital.png"
+  },
+  {
+    "id": "carrybee",
+    "name": "CarryBee",
+    "site": "https://carrybee.com/",
+    "asset": "https://d2i5dbcqw3eupw.cloudfront.net/assets/images/logo-with-tag-dark.png",
+    "image": "/clients/carrybee.png"
+  },
+  {
+    "id": "steadfast",
+    "name": "Steadfast Courier",
+    "site": "https://www.steadfast.com.bd/",
+    "asset": "https://www.steadfast.com.bd/ (official inline SVG)",
+    "image": "/clients/steadfast.svg"
+  },
+  {
+    "id": "gph-ispat",
+    "name": "GPH Ispat",
+    "site": "https://gphispat.com.bd/",
+    "source": "Client identity confirmed from user-provided corporate profile",
+    "asset": "https://gphispat.com.bd/wp-content/uploads/2025/07/gph-white-logo.png",
+    "image": "/clients/gph-ispat.png",
+    "dark": true
+  },
+  {
+    "id": "asset",
+    "name": "Asset Developments",
+    "site": "https://asset.com.bd/",
+    "source": "Client identity confirmed from user-provided corporate profile",
+    "asset": "https://asset.com.bd/wp-content/uploads/2021/04/cropped-Asset_Logo_w_Tagline-270x103.png",
+    "image": "/clients/asset.png"
+  },
+  {
+    "id": "rupayan",
+    "name": "Rupayan Group",
+    "site": "https://www.rupayangroup.com/",
+    "source": "Client identity confirmed from user-provided corporate profile",
+    "asset": "https://www.rupayangroup.com/wp-content/uploads/2021/07/Rupayan-Group-logo180.png",
+    "image": "/clients/rupayan.png"
+  },
+  {
+    "id": "jheel-maestria",
+    "name": "Jheel Maestria",
+    "site": "https://jheelmaestria.com/",
+    "source": "Client identity confirmed from user-provided corporate profile",
+    "asset": "https://jheelmaestria.com/wp-content/uploads/2026/03/header-logo-bg-remove.png",
+    "image": "/clients/jheel-maestria.png"
+  },
+  {
+    "id": "wood-tech",
+    "name": "Wood Tech Solution",
+    "site": "https://woodtechsolutionbd.com/",
+    "source": "Client identity confirmed from user-provided corporate profile",
+    "asset": "https://woodtechsolutionbd.com/wp-content/uploads/2018/07/WTS-Logo.png",
+    "image": "/clients/wood-tech.png"
+  },
+  {
+    "id": "sq-group",
+    "name": "SQ Group",
+    "site": "https://www.sqgroup.com/",
+    "source": "Client identity confirmed from user-provided corporate profile",
+    "asset": "https://www.sqgroup.com/_next/static/media/logo1.0vnin8hhxkzpe.png",
+    "image": "/clients/sq-group.png"
+  },
+  {
+    "id": "seven-rings",
+    "name": "Seven Rings Cement",
+    "site": "https://sevenringscement.com/",
+    "source": "Client identity confirmed from user-provided corporate profile",
+    "asset": "https://sevenringscement.com/wp-content/uploads/2024/08/src-logo.png",
+    "image": "/clients/seven-rings.png"
+  },
+  {
+    "id": "iom",
+    "name": "IOM — UN Migration",
+    "asset": "https://thumb.wikimedia.org/wikipedia/en/thumb/7/7c/International_Organization_for_Migration_logo.svg/250px-International_Organization_for_Migration_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+    "image": "/clients/iom.png",
+    "site": "https://en.wikipedia.org/wiki/International_Organization_for_Migration"
+  },
+  {
+    "id": "rangs",
+    "name": "Rangs Group",
+    "asset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Logo_of_Rangs_Group.svg/250px-Logo_of_Rangs_Group.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+    "image": "/clients/rangs.png",
+    "site": "https://en.wikipedia.org/wiki/Rangs_Group"
+  },
+  {
+    "id": "iedcr",
+    "name": "IEDCR",
+    "asset": "https://upload.wikimedia.org/wikipedia/en/e/eb/IEDCR_Logo.jpeg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail_unscaled",
+    "image": "/clients/iedcr.png",
+    "site": "https://en.wikipedia.org/wiki/Institute_of_Epidemiology,_Disease_Control_and_Research"
+  },
+  {
+    "id": "bori",
+    "name": "Bangladesh Oceanographic Research Institute",
+    "asset": "https://upload.wikimedia.org/wikipedia/en/6/62/Bangladesh_Oceanographic_Research_Institute.jpeg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail_unscaled",
+    "image": "/clients/bori.png",
+    "site": "https://en.wikipedia.org/wiki/Bangladesh_Oceanographic_Research_Institute"
+  },
+  {
+    "id": "dhaka-medical",
+    "name": "Dhaka Medical College",
+    "asset": "https://thumb.wikimedia.org/wikipedia/en/thumb/6/60/Morogram_of_Dhaka_Medical_College.svg/250px-Morogram_of_Dhaka_Medical_College.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+    "image": "/clients/dhaka-medical.png",
+    "site": "https://en.wikipedia.org/wiki/Dhaka_Medical_College"
+  },
+  {
+    "id": "chec",
+    "name": "China Harbour Engineering Company",
+    "asset": "https://thumb.wikimedia.org/wikipedia/en/thumb/b/b1/China_Harbour_Engineering_Co_logo_2.png/250px-China_Harbour_Engineering_Co_logo_2.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+    "image": "/clients/chec.png",
+    "site": "https://en.wikipedia.org/wiki/China_Harbour_Engineering"
+  },
+  {
+    "id": "crec",
+    "name": "China Railway Group (CREC)",
+    "asset": "https://thumb.wikimedia.org/wikipedia/en/thumb/8/8f/China_Railway_Group_Limited_logo.png/250px-China_Railway_Group_Limited_logo.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+    "image": "/clients/crec.png",
+    "site": "https://en.wikipedia.org/wiki/China_Railway_Group_Limited"
+  },
+  {
+    "id": "ccecc",
+    "name": "China Civil Engineering Construction Corporation",
+    "asset": "https://thumb.wikimedia.org/wikipedia/en/thumb/f/f2/China_Civil_Engineering_Construction_Corporation_logo.png/250px-China_Civil_Engineering_Construction_Corporation_logo.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+    "image": "/clients/ccecc.png",
+    "site": "https://en.wikipedia.org/wiki/China_Civil_Engineering_Construction_Corporation"
+  },
+  {
+    "id": "crcc",
+    "name": "China Railway Construction Corporation",
+    "asset": "https://thumb.wikimedia.org/wikipedia/en/thumb/9/94/Crcc_china_logo.png/250px-Crcc_china_logo.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+    "image": "/clients/crcc.png",
+    "site": "https://en.wikipedia.org/wiki/China_Railway_Construction_Corporation_Limited"
+  },
+  {
+    "id": "caab",
+    "name": "Civil Aviation Authority of Bangladesh",
+    "asset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6_%E0%A6%AC%E0%A7%87%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A6%B0%E0%A6%BF%E0%A6%95_%E0%A6%AC%E0%A6%BF%E0%A6%AE%E0%A6%BE%E0%A6%A8_%E0%A6%9A%E0%A6%B2%E0%A6%BE%E0%A6%9A%E0%A6%B2_%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A7%83%E0%A6%AA%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A7%87%E0%A6%B0_%E0%A6%B2%E0%A7%8B%E0%A6%97%E0%A7%8B.svg/250px-%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6_%E0%A6%AC%E0%A7%87%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A6%B0%E0%A6%BF%E0%A6%95_%E0%A6%AC%E0%A6%BF%E0%A6%AE%E0%A6%BE%E0%A6%A8_%E0%A6%9A%E0%A6%B2%E0%A6%BE%E0%A6%9A%E0%A6%B2_%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A7%83%E0%A6%AA%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A7%87%E0%A6%B0_%E0%A6%B2%E0%A7%8B%E0%A6%97%E0%A7%8B.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+    "image": "/clients/caab.png",
+    "site": "https://en.wikipedia.org/wiki/Civil_Aviation_Authority_of_Bangladesh"
+  },
+  {
+    "id": "shwapno",
+    "name": "Shwapno",
+    "site": "https://www.shwapno.com/",
+    "asset": "https://www.shwapno.com/images/shwapno_logo.png",
+    "image": "/clients/shwapno.png"
+  },
+  {
+    "id": "pharmasolutions",
+    "name": "PharmaSolutions Bangladesh",
+    "site": "https://pharmasolutions.com.bd/public/",
+    "asset": "https://pharmasolutions.com.bd/public/assets/images/202209222352Pharma-Solutions-Logo.png",
+    "image": "/clients/pharmasolutions.png"
+  },
+  {
+    "id": "amigo",
+    "name": "Amigo Bangladesh Ltd.",
+    "site": "https://www.ficci.org.bd/page/member-list",
+    "asset": "https://www.ficci.org.bd/uploads/logo/logo_amigo__1787032992.jpeg",
+    "image": "/clients/amigo.png"
+  },
+  {
+    "id": "shah-cement",
+    "name": "Shah Cement",
+    "site": "https://seeklogo.com/vector-logo/612999/shah-cement-industries-limited",
+    "asset": "https://images.seeklogo.com/logo-png/61/1/shah-cement-industries-limited-logo-png_seeklogo-612999.png",
+    "image": "/clients/shah-cement.png"
+  }
+]
