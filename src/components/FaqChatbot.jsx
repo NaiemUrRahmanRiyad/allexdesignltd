@@ -9,11 +9,9 @@ function FaqChatbot({onConsultation}){
   const [welcome,setWelcome]=useState(false);
   const [welcomeLeaving,setWelcomeLeaving]=useState(false);
   useEffect(()=>{
-    try{if(sessionStorage.getItem('allex-welcome-seen'))return;}catch{}
     const timer=setTimeout(()=>{
-      try{sessionStorage.setItem('allex-welcome-seen','1');}catch{}
       if(!dialog.current?.open)setWelcome(true);
-    },2200);
+    },350);
     return ()=>clearTimeout(timer);
   },[]);
   useEffect(()=>{
