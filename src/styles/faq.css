@@ -46,3 +46,9 @@ html body #root .faq-primary-topics button,html body #root .faq-other-topics but
 html body #root .faq-consultation{display:block;width:100%;margin-top:12px;padding:10px 14px;min-height:42px;font-size:12px;line-height:1.5;cursor:pointer}
 @media(max-height:650px){html body #root .faq-topic-panel{max-height:170px;padding:10px 14px}}
 @media(max-width:360px){.faq-primary-topics{gap:5px}html body #root .faq-primary-topics button{font-size:10px;padding-inline:4px}}
+/* Clear action and direct contact remain easy to read and tap. */
+html body #root .faq-clear{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;min-height:36px;padding:7px 12px;border:1px solid var(--line);border-radius:10px;background:var(--stone);color:var(--ink);font-size:12px;font-weight:600;line-height:1.5;white-space:nowrap;text-decoration:none;box-sizing:border-box}
+html body #root .faq-human{display:flex;align-items:center;justify-content:center;min-height:48px;margin:2px 18px 14px;padding:10px 12px;box-sizing:border-box;border:1px solid #54846b;border-radius:12px;background:#e3f2e8;color:#20573a;font-size:13px;font-weight:700;line-height:1.6;text-align:center;text-decoration:underline;text-underline-offset:3px}
+html[data-theme=dark] body #root .faq-human{background:#233e30;border-color:#719b7e;color:#c0f0cf}
+html body #root .faq-human:focus-visible,html body #root .faq-clear:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
+@media(max-width:360px){html body #root .faq-human{margin-inline:14px;font-size:12px}}
