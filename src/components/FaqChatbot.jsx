@@ -7,7 +7,19 @@ function FaqChatbot({onConsultation}){
   const {language}=useLanguage(); const bn=language==='bn';
   const dialog=useRef(),log=useRef(),launcher=useRef();
   const [welcome,setWelcome]=useState(false);
-  useEffect(()=>{const timer=setTimeout(()=>setWelcome(true),2200);return ()=>clearTimeout(timer);},[]);
+  useEffect(()=>{
+    try{if(sessionStorage.getItem('allex-welcome-seen'))return;}catch{}
+    const timer=setTimeout(()=>{
+      try{sessionStorage.setItem('allex-welcome-seen','1');}catch{}
+      if(!dialog.current?.open)setWelcome(true);
+    },2200);
+    return ()=>clearTimeout(timer);
+  },[]);
+  useEffect(()=>{
+    if(!welcome)return;
+    const timer=setTimeout(()=>setWelcome(false),6000);
+    return ()=>clearTimeout(timer);
+  },[welcome]);
   const [query,setQuery]=useState(''),[messages,setMessages]=useState([]);
   useEffect(()=>{if(log.current)log.current.scrollTop=log.current.scrollHeight;},[messages]);
   function ask(text,known){if(!text.trim())return;setMessages(old=>[...old.slice(-19),{text:text.trim(),faq:known||matchFaq(text),locale:faqLocale(text,language)}]);setQuery('');}
