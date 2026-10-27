@@ -23,3 +23,14 @@ html body #root .faq-header button{display:grid;place-items:center;width:36px;he
 html body #root .faq-form button{min-height:46px;flex-shrink:0;font-size:12px;line-height:1.4}
 @media(max-width:560px){html body #root .faq-dialog{inset:auto 12px 12px auto;width:calc(100vw - 24px);height:min(690px,calc(100dvh - 24px));max-height:calc(100dvh - 24px);margin:0}.faq-header{padding:16px}.faq-topics{max-height:110px}.faq-human{font-size:11px}}
 .faq-shortcuts{display:flex;gap:8px;flex-wrap:wrap;padding:10px 18px;flex-shrink:0;border-top:1px solid var(--line)}.faq-shortcuts button,.faq-book{padding:9px 12px;min-height:38px;font-size:11px;cursor:pointer}.faq-book{margin-top:12px}.faq-dialog .faq-topics{max-height:105px}.faq-dialog .faq-log{min-height:90px}@media(max-height:650px){.faq-dialog .faq-topics{max-height:70px}.faq-shortcuts{padding-block:6px}}
+html body #root .allex-welcome{position:fixed;right:22px;bottom:164px;z-index:89;width:min(300px,calc(100vw - 32px));box-sizing:border-box;border:1px solid #adbbab;border-radius:18px;background:linear-gradient(135deg,#fffdf7f5,#e3efe8f5);box-shadow:0 12px 36px #173c2929;backdrop-filter:blur(12px);color:#203d2c;animation:allex-welcome-in .35s ease-out both}
+html body #root .allex-welcome a{display:flex;flex-direction:column;gap:8px;padding:22px 34px 20px 20px;text-decoration:none;color:inherit;text-align:left;line-height:1.6;font-size:13px;overflow-wrap:break-word}
+html body #root .allex-welcome strong{font-size:14px;line-height:1.6;letter-spacing:0}
+html body #root .allex-welcome-action{font-weight:700;color:#226b45;margin-top:3px}
+html body #root .allex-welcome-close{position:absolute;right:4px;top:4px;display:grid;place-items:center;width:32px;min-height:32px;padding:0;border:0;background:transparent;box-shadow:none;color:inherit;font-size:22px;line-height:1;cursor:pointer}
+html[data-theme=dark] body #root .allex-welcome{background:linear-gradient(135deg,#294b3af5,#1b3028f5);border-color:#72947d;color:#f3f7ef}
+html[data-theme=dark] body #root .allex-welcome-action{color:#a9e7bf}
+html:has(dialog[open]) body #root .allex-welcome,html:has(#navigation.open) body #root .allex-welcome,html:has(.nav-services[open]) body #root .allex-welcome,html.mobile-keyboard-open body #root .allex-welcome{visibility:hidden;pointer-events:none}
+@keyframes allex-welcome-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:700px){html body #root .allex-welcome{left:16px;right:auto;bottom:calc(156px + env(safe-area-inset-bottom))}}
+@media(prefers-reduced-motion:reduce){html body #root .allex-welcome{animation:none}}

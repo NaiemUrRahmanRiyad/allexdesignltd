@@ -6,12 +6,14 @@ import { content } from '../data/content.js';
 function FaqChatbot({onConsultation}){
   const {language}=useLanguage(); const bn=language==='bn';
   const dialog=useRef(),log=useRef(),launcher=useRef();
+  const [welcome,setWelcome]=useState(false);
+  useEffect(()=>{const timer=setTimeout(()=>setWelcome(true),2200);return ()=>clearTimeout(timer);},[]);
   const [query,setQuery]=useState(''),[messages,setMessages]=useState([]);
   useEffect(()=>{if(log.current)log.current.scrollTop=log.current.scrollHeight;},[messages]);
   function ask(text,known){if(!text.trim())return;setMessages(old=>[...old.slice(-19),{text:text.trim(),faq:known||matchFaq(text),locale:faqLocale(text,language)}]);setQuery('');}
   function book(){dialog.current.close();onConsultation();}
   function close(){dialog.current.close();launcher.current?.focus();}
-  return <><button ref={launcher} type="button" className="faq-launcher" aria-haspopup="dialog" onClick={()=>dialog.current.showModal()}>{'✦ Ask ALLEX'}</button>
+  return <>{welcome&&<aside className="allex-welcome" aria-label="Welcome from ALLEX"><button type="button" className="allex-welcome-close" aria-label="Dismiss welcome message" onClick={()=>setWelcome(false)}>×</button><a href={content.contact.whatsappUrl} target="_blank" rel="noopener noreferrer" onClick={()=>setWelcome(false)}><strong>Assalamu Alaikum, Sir/Ma’am!</strong><span>How can we help you today?</span><span className="allex-welcome-action">Contact us on WhatsApp ↗</span></a></aside>}<button ref={launcher} type="button" className="faq-launcher" aria-haspopup="dialog" onClick={()=>{setWelcome(false);dialog.current.showModal();}}>{'✦ Ask ALLEX'}</button>
     <dialog ref={dialog} className="faq-dialog" aria-labelledby="faq-title">
       <div className="faq-header"><div><h2 id="faq-title">ALLEX FAQ</h2><p>{'Company information & useful links'}</p></div><button type="button" aria-label={'Close FAQ'} onClick={close}>×</button></div>
       <div className="faq-log" role="log" aria-live="polite" ref={log}><p className="faq-answer">{'Welcome! Choose a topic or ask about our services. Answers come from the company information provided here.'}</p>{messages.map((m,i)=><div key={i}><p className="faq-question">{m.text}</p><div className="faq-answer"><p>{m.faq?m.faq.answer[m.locale]:'I do not have a confirmed answer. Please contact our team on WhatsApp.'}</p>{m.faq?.action==='consultation'&&<button type="button" className="faq-book" onClick={book}>{'Book a consultation ↗'}</button>}{m.faq?.link&&<a href={m.faq.link} onClick={close}>{'View related section ↗'}</a>}</div></div>)}</div>
