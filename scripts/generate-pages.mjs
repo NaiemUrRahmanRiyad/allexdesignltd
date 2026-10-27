@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import { render } from '../.ssr/entry-server.js';
 import { seoCopy, pageUrl } from '../shared/seo.js';
+import { businessSchema } from '../shared/business-schema.js';
 import { netlifyRedirects, apacheRedirects } from '../shared/legacy-redirects.js';
 import { notFoundHtml } from '../shared/not-found.js';
 import { deploymentSettings } from '../shared/deployment.js';
@@ -29,7 +30,7 @@ for (const language of ['en']) {
 <meta name="twitter:description" content="${escape(copy.description)}">
 <meta name="twitter:image" content="${origin}/social-preview.jpeg">
 <meta name="twitter:image:alt" content="${escape(copy.imageAlt)}">
-<script type="application/ld+json">${JSON.stringify({'@context':'https://schema.org','@type':'Organization',name:'ALLEX Design and Development Ltd.',url:origin,logo:`${origin}/brand-logo.png`,image:`${origin}/social-preview.jpeg`,telephone:'+8801762689690',email:'info@allexdesign.com',address:{'@type':'PostalAddress',streetAddress:'NI Tower (Level 7), Plot 01, Road 10, Block E, Banani',addressLocality:'Dhaka',postalCode:'1213',addressCountry:'BD'},sameAs:['https://www.facebook.com/TheAllexDesign','https://www.youtube.com/@theallexdesign','https://www.instagram.com/allexgroup/']}).replaceAll('<','\\u003c')}</script>`;
+<script type="application/ld+json">${JSON.stringify(businessSchema(origin)).replaceAll('<','\\u003c')}</script>`;
   const html = template.replace(/lang="en"/, `lang="${language}"`).replace(/<!--SEO_START-->[\s\S]*?<!--SEO_END-->/,tags).replace('<div id="root"></div>',`<div id="root">${render(language)}</div>`);
   const target = 'dist'; await fs.mkdir(target,{recursive:true}); await fs.writeFile(`${target}/index.html`,html);
 }

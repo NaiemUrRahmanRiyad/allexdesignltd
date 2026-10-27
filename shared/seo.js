@@ -1,6 +1,6 @@
 export const productionOrigin = 'https://www.allexdesign.com';
 export const seoCopy = {
-  en: { title: 'ALLEX Design | Interior, Furniture & Development in Dhaka', description: 'Explore ALLEX Design’s interior design, custom furniture, construction and steel-structure services in Dhaka. View projects and discuss your space with our team.', imageAlt: 'ALLEX Design — exceptional workspaces and interior design', locale: 'en_US' },
+  en: { title: 'Interior Design, Furniture & Steel Construction Dhaka | ALLEX', description: 'ALLEX Design in Banani, Dhaka: home and office interior design, custom furniture and AD Steel construction. View completed projects and request a consultation.', imageAlt: 'ALLEX Design — exceptional workspaces and interior design', locale: 'en_US' },
 };
 export function siteOrigin(value = productionOrigin) {
   const parsed = new URL(value);
