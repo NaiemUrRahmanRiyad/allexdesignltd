@@ -34,3 +34,6 @@ html:has(dialog[open]) body #root .allex-welcome,html:has(#navigation.open) body
 @keyframes allex-welcome-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:700px){html body #root .allex-welcome{left:16px;right:auto;bottom:calc(156px + env(safe-area-inset-bottom))}}
 @media(prefers-reduced-motion:reduce){html body #root .allex-welcome{animation:none}}
+html body #root .allex-welcome.is-leaving{animation:allex-welcome-out .6s ease-in-out both;pointer-events:none}
+@keyframes allex-welcome-out{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(8px)}}
+@media(prefers-reduced-motion:reduce){html body #root .allex-welcome.is-leaving{animation:allex-welcome-out .6s ease-in-out both;transform:none}@keyframes allex-welcome-out{from{opacity:1}to{opacity:0}}}
