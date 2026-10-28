@@ -92,6 +92,7 @@ function Contact({ openRequest, initialSubject, initialProduct, onOpenForm }) {
         </div>
       </div>
       <div className="contact-invitation" data-reveal>
+        <span className="botanical-corner-detail" aria-hidden="true" />
         <p>Tell us what you need, where the project is and any budget you have in mind. We can discuss the next steps together.</p>
         <button type="button" className="button contact-cta" onClick={() => onOpenForm()}>Start a conversation<span aria-hidden="true">↗</span></button>
       </div>

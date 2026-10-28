@@ -61,6 +61,7 @@ export default function App() {
       <HeroSlideshow onBookConsultation={bookConsultation} />
       <section id="about" className="about section" aria-labelledby="about-title">
         <div className="about-overview-card">
+          <span className="botanical-corner-detail" aria-hidden="true" />
         <div className="about-section-heading" data-reveal><h2 id="about-title">ABOUT ALLEX DESIGN</h2><p>Design · Furniture · Execution</p></div>
         <div className="about-intro" data-reveal>
           <div className="about-intro-copy">

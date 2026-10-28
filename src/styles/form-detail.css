@@ -8,3 +8,10 @@ html[data-theme=dark] body #root .contact-dialog::before{background:#bcd0a5;opac
 html body #root .faq-dialog{isolation:isolate}
 html body #root .faq-dialog::before{content:"";position:absolute;inset:0;border-radius:inherit;background:#69816b;opacity:.17;mask:url('/form-botanical-detail.svg') center / 100% auto repeat-y;-webkit-mask:url('/form-botanical-detail.svg') center / 100% auto repeat-y;pointer-events:none;z-index:-1}
 html[data-theme=dark] body #root .faq-dialog::before{background:#bcd0a5;opacity:.16}
+/* Only two spacious editorial panels receive a quieter corner accent. */
+html body #root :is(.about-overview-card,.contact-invitation){position:relative;isolation:isolate}
+html body #root .botanical-corner-detail{position:absolute;inset:1px;border-radius:inherit;overflow:hidden;pointer-events:none;z-index:-1}
+html body #root .botanical-corner-detail::before{content:"";position:absolute;right:-25px;top:0;width:250px;height:100%;background:#69816b;opacity:.14;mask:url('/form-botanical-detail.svg') right top / 370px auto no-repeat;-webkit-mask:url('/form-botanical-detail.svg') right top / 370px auto no-repeat}
+html body #root .contact-invitation .botanical-corner-detail::before{width:180px;opacity:.16;mask-size:270px auto;-webkit-mask-size:270px auto}
+html[data-theme=dark] body #root .botanical-corner-detail::before{background:#bcd0a5;opacity:.12}
+@media(max-width:700px){html body #root .botanical-corner-detail::before{width:140px;opacity:.1;mask-size:260px auto;-webkit-mask-size:260px auto}html body #root .contact-invitation .botanical-corner-detail::before{width:120px;opacity:.1}}
