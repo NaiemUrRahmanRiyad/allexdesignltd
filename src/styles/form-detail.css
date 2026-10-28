@@ -23,3 +23,9 @@ html body #root .about-overview-card>.botanical-corner-detail{inset:22px;border-
 html body #root .about-overview-card>.botanical-corner-detail::before{right:0;top:0;width:230px;height:270px;opacity:.16;mask:url('/about-botanical-corner.svg') right top / contain no-repeat;-webkit-mask:url('/about-botanical-corner.svg') right top / contain no-repeat}
 html[data-theme=dark] body #root .about-overview-card>.botanical-corner-detail::before{opacity:.14}
 @media(max-width:700px){html body #root .about-overview-card>.botanical-corner-detail{inset:16px}html body #root .about-overview-card>.botanical-corner-detail::before{width:145px;height:175px;opacity:.1}}
+/* A small footer accent stays clear of the brand and copyright text. */
+html body #root footer.site-footer{position:relative;isolation:isolate}
+html body #root footer.site-footer::before{content:"";position:absolute;right:10px;bottom:6px;width:100px;height:100px;background:#62775c;opacity:.2;mask:url('/about-botanical-corner.svg') center / contain no-repeat;-webkit-mask:url('/about-botanical-corner.svg') center / contain no-repeat;pointer-events:none;z-index:-1}
+html[data-theme=dark] body #root footer.site-footer::before{background:#bfd1aa;opacity:.18}
+@media(min-width:701px){html body #root footer.site-footer .footer-copyright{margin-right:70px}}
+@media(max-width:700px){html body #root footer.site-footer::before{width:85px;height:85px;right:16px;bottom:12px;opacity:.15}}
