@@ -7,12 +7,10 @@ html body #root .overview-next-step{margin-top:clamp(28px,3.5vw,48px);gap:20px}
 html body #root .hero-typewriter-label{font-size:clamp(11px,1.15vw,15px);letter-spacing:.5px;line-height:1.6;text-align:center;text-wrap:balance;font-weight:600;color:var(--ink)}
 html body #root .hero-cta-primary{font-weight:700}
 html body #root .hero-cta-secondary{font-weight:500}
-/* Photo controls stay in the dialog; enlarged images scroll within their viewport. */
+/* Simple project navigation with images fitted inside the dialog. */
 html body #root .project-image-tools{display:flex;align-items:stretch;justify-content:space-between;gap:10px;margin:0 0 14px}
 html body #root .project-image-tools button{min-height:44px;padding:9px 15px;font-size:12px;line-height:1.5;white-space:nowrap}
 html body #root .project-image-tools button:disabled{opacity:.45;cursor:default}
 html body #root .project-image-viewport{max-height:58svh;overflow:auto;border-radius:12px;overscroll-behavior:contain;background:var(--stone)}
 html body #root .project-image-viewport .project-image-large{max-height:58svh}
-html body #root .project-image-viewport.is-zoomed .project-image-large{width:200%;max-width:none;max-height:none;height:auto;object-fit:initial}
-html body #root .project-zoom-hint{font-size:12px;line-height:1.6;margin:10px 0 0;color:var(--muted);text-align:left}
 @media(max-width:700px){html body #root .project-image-tools{gap:6px}html body #root .project-image-tools button{padding:9px 10px;font-size:11px}html body #root .project-image-viewport,html body #root .project-image-viewport .project-image-large{max-height:50svh}}
