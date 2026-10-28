@@ -4,3 +4,7 @@ html body #root .contact-dialog::before{content:"";position:absolute;inset:0;min
 html body #root .contact-dialog::after{content:none}
 html[data-theme=dark] body #root .contact-dialog::before{background:#bcd0a5;opacity:.18}
 @media(max-width:560px){html body #root .contact-dialog::before{opacity:.16;mask-size:145% auto;-webkit-mask-size:145% auto}}
+/* Matching botanical detail for the Ask ALLEX panel. */
+html body #root .faq-dialog{isolation:isolate}
+html body #root .faq-dialog::before{content:"";position:absolute;inset:0;border-radius:inherit;background:#69816b;opacity:.17;mask:url('/form-botanical-detail.svg') center / 100% auto repeat-y;-webkit-mask:url('/form-botanical-detail.svg') center / 100% auto repeat-y;pointer-events:none;z-index:-1}
+html[data-theme=dark] body #root .faq-dialog::before{background:#bcd0a5;opacity:.16}
