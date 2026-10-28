@@ -12,8 +12,9 @@ html body #root main::after{right:0;transform:scaleX(-1);background-position:lef
 html[data-theme=dark] body #root main::before,
 html[data-theme=dark] body #root main::after{background-image:url('/page-botanical-dark-desktop.webp');opacity:.1}
 @media(max-width:700px){
-  html body #root main::before,html body #root main::after{width:38px;opacity:.09;background-image:url('/page-botanical-light-mobile.webp');background-size:300px 900px}
-  html[data-theme=dark] body #root main::before,html[data-theme=dark] body #root main::after{background-image:url('/page-botanical-dark-mobile.webp');opacity:.07}
+  html body #root main::before,html body #root main::after{width:56px;opacity:.15;background-image:url('/page-botanical-light-mobile.webp');background-size:56px 720px}
+  html body #root main::after{background-position:left 360px}
+  html[data-theme=dark] body #root main::before,html[data-theme=dark] body #root main::after{background-image:url('/page-botanical-dark-mobile.webp');opacity:.12}
 }
 
 html body #root .page-grid-detail{position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(var(--page-grid-color) 1px,transparent 1px),linear-gradient(90deg,var(--page-grid-color) 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(90deg,#0001 0%,#0002 9%,#000 22%,#000 78%,#0002 91%,#0001 100%);-webkit-mask-image:linear-gradient(90deg,#0001 0%,#0002 9%,#000 22%,#000 78%,#0002 91%,#0001 100%)}

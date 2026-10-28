@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 720" fill="none" stroke="#57755f" stroke-width=".8" stroke-linecap="round" stroke-linejoin="round">
+ <defs><g id="bloom"><path d="M0-4C-10-12-8-23 0-29C8-23 10-12 0-4Z"/><path d="M0-4C-10-12-8-23 0-29C8-23 10-12 0-4Z" transform="rotate(60)"/><path d="M0-4C-10-12-8-23 0-29C8-23 10-12 0-4Z" transform="rotate(120)"/><path d="M0-4C-10-12-8-23 0-29C8-23 10-12 0-4Z" transform="rotate(180)"/><path d="M0-4C-10-12-8-23 0-29C8-23 10-12 0-4Z" transform="rotate(240)"/><path d="M0-4C-10-12-8-23 0-29C8-23 10-12 0-4Z" transform="rotate(300)"/><circle r="5"/><circle r="2"/></g></defs>
+ <path d="M12 10C2 67 30 105 15 153S4 229 18 273C34 324 3 357 14 405S31 487 16 531 4 622 14 710"/>
+ <use href="#bloom" transform="translate(15 130) scale(.45)"/><use href="#bloom" transform="translate(17 410) scale(.5)"/><use href="#bloom" transform="translate(15 650) scale(.4)"/>
+ <path d="M12 79C-1 73 0 56 3 51c10 6 14 18 9 28Zm5 102c16-8 21-22 18-34-14 7-21 20-18 34ZM11 239c-11-10-9-24-5-33 10 8 14 22 5 33Zm9 64c16-7 22-21 18-34-15 6-22 19-18 34ZM13 364c-11-9-10-25-6-34 10 8 13 21 6 34Zm7 110c15-5 21-20 18-32-15 6-21 19-18 32Zm-7 97c-12-9-11-24-7-34 11 7 14 21 7 34Zm1 39c17-6 22-20 18-31-14 5-21 18-18 31Z"/>
+ <path d="m12 79-7-19m12 121 14-25m-20 83-4-24m13 88 14-25m-21 86-4-21m11 131 14-23m-21 120-5-23m6 62 14-24"/>
+</svg>
