@@ -112,7 +112,7 @@ function HeroSlideshow({ onBookConsultation }) {
         if (!event.currentTarget.contains(event.relatedTarget)) setFocused(false);
       }}
     >
-      <h1 className="sr-only">Exceptional workspaces for greater business</h1>
+      <h1 className="sr-only">Interior design, custom furniture and steel construction in Dhaka — ALLEX Design</h1>
       <div className="hero-slides" aria-live={paused || focused || reducedMotion ? 'polite' : 'off'}>
         {slides.map((slide, index) => loadedSlides.has(index) && <img
           key={slide.src}
@@ -130,8 +130,8 @@ function HeroSlideshow({ onBookConsultation }) {
         />)}
       </div>
       <div className="hero-cta" aria-label="Explore ALLEX services">
-        <a className="hero-cta-primary" href="#projects">View our projects <span aria-hidden="true">↗</span></a>
-        <button className="hero-cta-secondary" type="button" onClick={onBookConsultation}>Book a consultation</button>
+        <button className="hero-cta-primary" type="button" onClick={onBookConsultation}>Book a consultation <span aria-hidden="true">↗</span></button>
+        <a className="hero-cta-secondary button" href="#interior-projects">Explore our work</a>
       </div>
       <div className="hero-slideshow-controls" aria-label="Choose featured image">
         {!reducedMotion && <button
@@ -152,7 +152,7 @@ function HeroSlideshow({ onBookConsultation }) {
       </div>
     </section>
     <div className="hero-typewriter" aria-label="ALLEX services">
-      <span className="hero-typewriter-label">FROM CONCEPT TO COMPLETION</span>
+      <span className="hero-typewriter-label">Interior design · Custom furniture · Steel construction</span>
       <div><span className="hero-typewriter-intro">Spaces shaped around</span><Typewriter phrases={content.phrases} /></div>
     </div>
   </div></Localize>;
