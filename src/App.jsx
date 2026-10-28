@@ -118,6 +118,7 @@ export default function App() {
           </article>)}
         </div>
         <div className="project-process" data-reveal>
+          <span className="botanical-corner-detail" aria-hidden="true" />
           <div className="project-process-heading">
             <p className="eyebrow">HOW WE WORK</p>
             <h3>From first conversation<br />to <em>finished space.</em></h3>

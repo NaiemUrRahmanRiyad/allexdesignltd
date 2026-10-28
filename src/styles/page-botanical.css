@@ -1,4 +1,8 @@
 /* Reuse the page grid and a single tiny SVG; keep the reading column clear. */
+/* Reserve the grid for two open areas; service and project sections stay quieter. */
+html body,html[data-theme=dark] body{background-image:var(--page-wash);background-size:100% 100%;background-attachment:fixed}
+html body #root :is(.home-screen,.clients.section),
+html[data-theme=dark] body #root :is(.home-screen,.clients.section){background-image:linear-gradient(var(--page-grid-color) 1px,transparent 1px),linear-gradient(90deg,var(--page-grid-color) 1px,transparent 1px);background-size:72px 72px}
 html body #root main{position:relative;isolation:isolate}
 html body #root main::before,
 html body #root main::after{
