@@ -18,3 +18,8 @@ html[data-theme=dark] body #root .botanical-corner-detail::before{background:#bc
 html body #root .project-process{position:relative;isolation:isolate}
 html body #root .project-process .botanical-corner-detail::before{width:220px;opacity:.11;mask-size:330px auto;-webkit-mask-size:330px auto}
 @media(max-width:700px){html body #root .project-process .botanical-corner-detail::before{width:130px;opacity:.08}}
+/* About uses a complete, inset sprig rather than a cropped full-page pattern. */
+html body #root .about-overview-card>.botanical-corner-detail{inset:22px;border-radius:16px}
+html body #root .about-overview-card>.botanical-corner-detail::before{right:0;top:0;width:230px;height:270px;opacity:.16;mask:url('/about-botanical-corner.svg') right top / contain no-repeat;-webkit-mask:url('/about-botanical-corner.svg') right top / contain no-repeat}
+html[data-theme=dark] body #root .about-overview-card>.botanical-corner-detail::before{opacity:.14}
+@media(max-width:700px){html body #root .about-overview-card>.botanical-corner-detail{inset:16px}html body #root .about-overview-card>.botanical-corner-detail::before{width:145px;height:175px;opacity:.1}}
