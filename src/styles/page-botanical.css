@@ -1,0 +1,17 @@
+/* Reuse the page grid and a single tiny SVG; keep the reading column clear. */
+html body #root main{position:relative;isolation:isolate}
+html body #root main::before,
+html body #root main::after{
+  content:"";position:absolute;top:0;bottom:0;width:clamp(65px,13vw,190px);
+  z-index:-1;pointer-events:none;background:#57755f;opacity:.14;
+  mask:url('/form-botanical-detail.svg') left top / 390px 900px repeat-y;
+  -webkit-mask:url('/form-botanical-detail.svg') left top / 390px 900px repeat-y;
+}
+html body #root main::before{left:0}
+html body #root main::after{right:0;transform:scaleX(-1);mask-position:left 440px;-webkit-mask-position:left 440px}
+html[data-theme=dark] body #root main::before,
+html[data-theme=dark] body #root main::after{background:#bfd1aa;opacity:.1}
+@media(max-width:700px){
+  html body #root main::before,html body #root main::after{width:38px;opacity:.09;mask-size:300px 900px;-webkit-mask-size:300px 900px}
+  html[data-theme=dark] body #root main::before,html[data-theme=dark] body #root main::after{opacity:.07}
+}
