@@ -29,3 +29,14 @@ html body #root footer.site-footer::before{content:"";position:absolute;right:10
 html[data-theme=dark] body #root footer.site-footer::before{background:#bfd1aa;opacity:.18}
 @media(min-width:701px){html body #root footer.site-footer .footer-copyright{margin-right:70px}}
 @media(max-width:700px){html body #root footer.site-footer::before{width:85px;height:85px;right:16px;bottom:12px;opacity:.15}}
+/* Refine the compact footer and make its corner artwork easier to see. */
+html body #root footer.site-footer::before{right:10px;bottom:8px;width:145px;height:calc(100% - 16px);max-height:140px;opacity:.34;mask-size:cover;-webkit-mask-size:cover}
+html[data-theme=dark] body #root footer.site-footer::before{background:#d0dcb5;opacity:.32}
+html body #root footer.site-footer .footer-brand p{font-size:13px;font-weight:600;line-height:1.65;color:#293f32}
+html body #root footer.site-footer .footer-brand span{font-size:11px;line-height:1.7;color:#425842}
+html body #root footer.site-footer .footer-copyright{font-size:11px;line-height:1.7;color:#425842;opacity:1}
+html[data-theme=dark] body #root footer.site-footer .footer-brand p{color:#fff5d9}
+html[data-theme=dark] body #root footer.site-footer .footer-brand span{color:#d4e1bf}
+html[data-theme=dark] body #root footer.site-footer .footer-copyright{color:#dedbc9}
+@media(min-width:701px){html body #root footer.site-footer .footer-copyright{margin-right:110px}}
+@media(max-width:700px){html body #root footer.site-footer::before{width:115px;height:100px;bottom:10px;right:12px;opacity:.28}html body #root footer.site-footer .footer-brand p{font-size:12px}html body #root footer.site-footer .footer-copyright{font-size:10px}}
