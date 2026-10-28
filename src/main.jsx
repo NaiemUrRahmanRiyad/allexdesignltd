@@ -38,6 +38,7 @@ import './styles/responsive-typography.css';
 import './styles/image-hover.css';
 import './styles/english-layout.css';
 import './styles/steel-image-dialog.css';
+import './styles/form-detail.css';
 const language = 'en';
 const app = <React.StrictMode><LanguageProvider initialLanguage={language}><Seo /><App /></LanguageProvider></React.StrictMode>;
 const root = document.getElementById('root');
