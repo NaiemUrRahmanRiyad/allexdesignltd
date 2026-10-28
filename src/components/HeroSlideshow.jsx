@@ -101,6 +101,7 @@ function HeroSlideshow({ onBookConsultation }) {
   }, [activeSlide, paused, focused, reducedMotion, loadedSlides]);
 
   return <Localize><div className="home-screen">
+    <span className="home-rose-corners" aria-hidden="true" />
     <section
       id="home"
       className="hero hero-slideshow"
