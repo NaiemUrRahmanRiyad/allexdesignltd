@@ -16,7 +16,7 @@ export default function ProjectCard({ project, index }) {
       <div><p>ALLEX DESIGN</p><h3 title={project.title}>{project.title}</h3></div>
       <span className="project-card-type">YOUTUBE</span>
     </div>
-    {<div className="project-card-details" aria-label="Project details">
+    {<div className="project-card-details" role="group" aria-label="Project details">
       {project.type && <span>{project.type}</span>}
       {project.location && <span>{project.location}</span>}
       <p>{project.scope}</p>

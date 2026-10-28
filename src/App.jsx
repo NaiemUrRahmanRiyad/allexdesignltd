@@ -53,7 +53,7 @@ export default function App() {
     <div className="ambient-light" aria-hidden="true" />
     <a className="skip-link" href="#main">Skip to content</a>
     <header>
-      <a href="#home" className="brand" aria-label="ALLEX Design and Development Ltd. — home"><img src={logo} alt="ALLEX" width="65" height="62" /><span className="brand-name">DESIGN &amp;<br />DEVELOPMENT LTD.</span></a>
+      <a href="#home" className="brand" aria-label="ALLEX DESIGN & DEVELOPMENT LTD. — home"><img src={logo} alt="ALLEX" width="65" height="62" /><span className="brand-name">DESIGN &amp;<br />DEVELOPMENT LTD.</span></a>
       <div className="header-tools"><ThemeToggle /><button className="menu-toggle" onClick={() => setMenu(!menu)} aria-expanded={menu} aria-controls="navigation">{menu ? 'Close' : 'Menu'}</button></div>
       <nav id="navigation" className={menu ? 'open' : ''}>{[['home', 'Home'], ['about', 'About Us'], ['services', 'Services'], ['projects', 'Projects']].map(([id, label]) => id === 'services' ? <ServicesDropdown key={id} active={['services','furniture','adsteel','interior-design','interior-projects'].includes(activeNav)} onNavigate={target=>{setActiveNav(target);setMenu(false);}} /> : <a key={id} href={`#${id}`} aria-current={activeNav === id ? 'location' : undefined} onClick={() => { setActiveNav(id); setMenu(false); }}>{label}</a>)}<button className="contact-nav-trigger" onClick={() => { setMenu(false); openContactForm(); }}>Let’s talk <span aria-hidden="true">↗</span></button></nav>
     </header>
