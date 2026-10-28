@@ -1,8 +1,6 @@
-/* Reuse the page grid and a single tiny SVG; keep the reading column clear. */
-/* Reserve the grid for two open areas; service and project sections stay quieter. */
+/* One continuous canvas avoids section seams and grid restarts. */
 html body,html[data-theme=dark] body{background-image:var(--page-wash);background-size:100% 100%;background-attachment:fixed}
-html body #root :is(.home-screen,.clients.section),
-html[data-theme=dark] body #root :is(.home-screen,.clients.section){background-image:linear-gradient(var(--page-grid-color) 1px,transparent 1px),linear-gradient(90deg,var(--page-grid-color) 1px,transparent 1px);background-size:72px 72px}
+html body #root :is(.home-screen,.home-screen .hero-typewriter,main>.section),html[data-theme=dark] body #root :is(.home-screen,.home-screen .hero-typewriter,main>.section){background:transparent;border-top:0;border-bottom:0}
 html body #root main{position:relative;isolation:isolate}
 html body #root main::before,
 html body #root main::after{
@@ -19,6 +17,7 @@ html[data-theme=dark] body #root main::after{background:#bfd1aa;opacity:.1}
   html body #root main::before,html body #root main::after{width:38px;opacity:.09;mask-size:300px 900px;-webkit-mask-size:300px 900px}
   html[data-theme=dark] body #root main::before,html[data-theme=dark] body #root main::after{opacity:.07}
 }
-/* Fade only the grid near botanical edges; preserve its normal centre strength. */
-html body #root :is(.home-screen,.clients.section),html[data-theme=dark] body #root :is(.home-screen,.clients.section){position:relative;isolation:isolate;background-image:none}
-html body #root :is(.home-screen,.clients.section)::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(var(--page-grid-color) 1px,transparent 1px),linear-gradient(90deg,var(--page-grid-color) 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(90deg,#0001 0%,#0002 9%,#000 22%,#000 78%,#0002 91%,#0001 100%);-webkit-mask-image:linear-gradient(90deg,#0001 0%,#0002 9%,#000 22%,#000 78%,#0002 91%,#0001 100%)}
+
+html body #root .page-grid-detail{position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(var(--page-grid-color) 1px,transparent 1px),linear-gradient(90deg,var(--page-grid-color) 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(90deg,#0001 0%,#0002 9%,#000 22%,#000 78%,#0002 91%,#0001 100%);-webkit-mask-image:linear-gradient(90deg,#0001 0%,#0002 9%,#000 22%,#000 78%,#0002 91%,#0001 100%)}
+/* Legacy per-section overlays must not restart the page's gradient or grid. */
+html body #root .services::before,html body #root .contact::before,html body #root .projects::after,html body #root .projects::before,html body #root .about.section::before,html body #root .about.section::after{content:none;background:none}
