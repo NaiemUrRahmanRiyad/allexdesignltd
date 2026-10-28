@@ -15,6 +15,13 @@ test('reveal runtime ignores text changes, registers expanded cards and cleans u
   globalThis.window={IntersectionObserver:globalThis.IntersectionObserver,ResizeObserver:globalThis.ResizeObserver};
   const stop=startRevealRuntime(false);
   assert.equal(fullScans,1);
+  observers[0].callback([{target:card,isIntersecting:true}]);
+  assert.ok(card.classList.contains('is-visible'));
+  observers[0].callback([{target:card,isIntersecting:false,boundingClientRect:{bottom:-80}}]);
+  assert.equal(card.style.values.get('--reveal-offset'),'-16px');
+  assert.ok(!card.classList.contains('is-visible'));
+  observers[0].callback([{target:card,isIntersecting:true}]);
+  assert.ok(card.classList.contains('is-visible'),'returning while scrolling up reveals the card again');
 
   mutation([{addedNodes:[{nodeType:3}],removedNodes:[{nodeType:3}]}]);
   assert.equal(fullScans,1,'typing and counters must never trigger a document-wide rescan');

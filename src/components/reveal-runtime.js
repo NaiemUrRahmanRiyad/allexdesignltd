@@ -9,9 +9,13 @@ export function startRevealRuntime(reduced) {
       if (entry.isIntersecting) {
         element.classList.add('is-visible');
         if (!element.hasAttribute('data-reveal-repeat') && !element.matches(cardSelector)) observer.unobserve(element);
-      } else if (element.hasAttribute('data-reveal-repeat') || element.matches(cardSelector)) element.classList.remove('is-visible');
+      } else if (element.hasAttribute('data-reveal-repeat') || element.matches(cardSelector)) {
+        // Reset only beyond the viewport buffer, with the next entrance following scroll direction.
+        element.style.setProperty('--reveal-offset', entry.boundingClientRect?.bottom < 0 ? '-16px' : '16px');
+        element.classList.remove('is-visible');
+      }
     }
-  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 }) : null;
+  }, { rootMargin: '60px 0px', threshold: 0 }) : null;
   // Allocate the original glow only near the screen, preserving its paused phase.
   const nearby = canObserve ? new IntersectionObserver(entries => {
     for (const entry of entries) {
@@ -61,6 +65,6 @@ export function startRevealRuntime(reduced) {
     additions.disconnect(); observer?.disconnect(); nearby?.disconnect();
     document.removeEventListener('visibilitychange', syncVisibility);
     document.documentElement.classList.remove('card-glow-paused', 'motion-ready');
-    elements.forEach(element => { element.classList.remove('is-visible', 'card-reveal', 'glow-ready'); element.style.removeProperty('--glow-delay'); });
+    elements.forEach(element => { element.classList.remove('is-visible', 'card-reveal', 'glow-ready'); element.style.removeProperty('--glow-delay'); element.style.removeProperty('--reveal-offset'); });
   };
 }
