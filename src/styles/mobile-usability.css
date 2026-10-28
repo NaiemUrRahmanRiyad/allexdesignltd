@@ -1,12 +1,12 @@
 /* Mobile-only placement and text handling; existing materials and effects remain. */
 @media (max-width:700px) {
   html body #root .faq-launcher {
-    left:16px; right:auto;
+    left:auto; right:16px;
     bottom:calc(94px + env(safe-area-inset-bottom));
     max-width:calc(100% - 96px);
     white-space:normal; overflow-wrap:break-word;
   }
-  html body #root .back-top { right:16px; bottom:calc(94px + env(safe-area-inset-bottom)); }
+  html body #root .back-top { left:16px; right:auto; bottom:calc(94px + env(safe-area-inset-bottom)); }
   html:has(#navigation.open) body #root :is(.faq-launcher,.back-top,.quick-contact-dock),
   html:has(.nav-services[open]) body #root :is(.faq-launcher,.back-top,.quick-contact-dock),
   html:has(dialog[open]) body #root :is(.faq-launcher,.back-top,.quick-contact-dock),

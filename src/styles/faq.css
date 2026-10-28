@@ -32,7 +32,7 @@ html[data-theme=dark] body #root .allex-welcome{background:linear-gradient(135de
 html[data-theme=dark] body #root .allex-welcome-action{color:#a9e7bf}
 html:has(dialog[open]) body #root .allex-welcome,html:has(#navigation.open) body #root .allex-welcome,html:has(.nav-services[open]) body #root .allex-welcome,html.mobile-keyboard-open body #root .allex-welcome{visibility:hidden;pointer-events:none}
 @keyframes allex-welcome-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-@media(max-width:700px){html body #root .allex-welcome{left:16px;right:auto;bottom:calc(156px + env(safe-area-inset-bottom))}}
+@media(max-width:700px){html body #root .allex-welcome{left:auto;right:16px;bottom:calc(156px + env(safe-area-inset-bottom))}}
 @media(prefers-reduced-motion:reduce){html body #root .allex-welcome{animation:none}}
 html body #root .allex-welcome.is-leaving{animation:allex-welcome-out .6s ease-in-out both;pointer-events:none}
 @keyframes allex-welcome-out{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(8px)}}
@@ -55,3 +55,4 @@ html body #root .faq-human:focus-visible,html body #root .faq-clear:focus-visibl
 /* Keep direct WhatsApp contact as a clear text link, without a card. */
 html body #root .faq-human{display:block;min-height:44px;margin:0;padding:10px 18px 16px;border:0;border-radius:0;background:transparent;box-shadow:none;color:#20573a;font-size:13px;font-weight:700;line-height:1.6;text-align:center;text-decoration:underline;text-underline-offset:4px}
 html[data-theme=dark] body #root .faq-human{background:transparent;border:0;color:#c0f0cf}
+
