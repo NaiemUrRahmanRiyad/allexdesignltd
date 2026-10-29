@@ -1,29 +1,7 @@
-/* One continuous canvas avoids seams. Pre-rendered tiles avoid page-height SVG masks. */
+/* A clean continuous gradient and subtle grid keep the portfolio in focus. */
 html body,html[data-theme=dark] body{background-image:var(--page-wash);background-size:100% 100%;background-attachment:fixed}
 html body #root :is(.home-screen,.home-screen .hero-typewriter,main>.section),html[data-theme=dark] body #root :is(.home-screen,.home-screen .hero-typewriter,main>.section){background:transparent;border-top:0;border-bottom:0}
 html body #root main{position:relative;isolation:isolate}
-html body #root main::before,
-html body #root main::after{
-  content:"";position:absolute;top:var(--home-pattern-offset,100svh);bottom:0;width:160px;
-  z-index:-1;pointer-events:none;background:transparent url('/page-botanical-light-airy.webp') left top / 160px 800px repeat-y;opacity:.12;
-}
-html body #root main::before{left:0}
-html body #root main::after{right:0;transform:scaleX(-1)}
-html[data-theme=dark] body #root main::before,
-html[data-theme=dark] body #root main::after{background-image:url('/page-botanical-dark-airy.webp');opacity:.12}
-@media(max-width:700px){
-  html body #root main::before,html body #root main::after{width:80px;opacity:.14;background-size:80px 400px}
-  html[data-theme=dark] body #root main::before,html[data-theme=dark] body #root main::after{opacity:.13}
-}
-
 html body #root .page-grid-detail{position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(var(--page-grid-color) 1px,transparent 1px),linear-gradient(90deg,var(--page-grid-color) 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(90deg,#0001 0%,#0002 9%,#000 22%,#000 78%,#0002 91%,#0001 100%);-webkit-mask-image:linear-gradient(90deg,#0001 0%,#0002 9%,#000 22%,#000 78%,#0002 91%,#0001 100%)}
 /* Legacy per-section overlays must not restart the page's gradient or grid. */
 html body #root .services::before,html body #root .contact::before,html body #root .projects::after,html body #root .projects::before,html body #root .about.section::before,html body #root .about.section::after{content:none;background:none}
-/* Small rose outlines in the lower Home corners, outside the central content. */
-html body #root .home-screen{position:relative}
-.home-rose-corners{position:absolute;inset:0;pointer-events:none;z-index:2}
-.home-rose-corners::before,.home-rose-corners::after{content:"";position:absolute;bottom:10px;width:95px;height:125px;background:#8d8159;opacity:.3;mask:url('/home-rose-outline.svg') center / contain no-repeat;-webkit-mask:url('/home-rose-outline.svg') center / contain no-repeat}
-.home-rose-corners::before{left:16px;transform:rotate(-12deg)}
-.home-rose-corners::after{right:16px;transform:scaleX(-1) rotate(-12deg)}
-html[data-theme=dark] .home-rose-corners::before,html[data-theme=dark] .home-rose-corners::after{background:#c9bc8b;opacity:.25}
-@media(max-width:700px){.home-rose-corners::before,.home-rose-corners::after{width:45px;height:60px;bottom:8px;opacity:.2}.home-rose-corners::before{left:5px}.home-rose-corners::after{right:5px}}
