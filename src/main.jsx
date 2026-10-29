@@ -52,3 +52,5 @@ if (root.hasChildNodes()) hydrateRoot(root, app); else createRoot(root).render(a
 
 
 
+
+import './styles/card-texture.css';
