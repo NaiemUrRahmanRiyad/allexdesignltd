@@ -1,7 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 300" fill="none" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
- <defs><path id="petal" d="M0-11C-18-29-15-48 0-61C15-48 18-29 0-11Z"/><path id="leaf" d="M0 0C-28-5-40-26-36-48C-12-43 4-23 0 0ZM0 0-30-40"/></defs>
- <path d="M220 272C154 245 215 191 171 159C133 130 167 97 192 72M190 212C139 221 106 189 110 164M173 161C220 156 239 125 222 107"/>
- <use href="#leaf" transform="translate(187 239) rotate(-20)"/><use href="#leaf" transform="translate(185 200) rotate(100)"/><use href="#leaf" transform="translate(156 146) rotate(-20)"/><use href="#leaf" transform="translate(214 145) rotate(105)"/><use href="#leaf" transform="translate(137 202) rotate(-28)"/><use href="#leaf" transform="translate(115 180) rotate(-5)"/>
- <g transform="translate(187 70)"><use href="#petal"/><use href="#petal" transform="rotate(60)"/><use href="#petal" transform="rotate(120)"/><use href="#petal" transform="rotate(180)"/><use href="#petal" transform="rotate(240)"/><use href="#petal" transform="rotate(300)"/><circle r="12"/><circle r="6"/></g>
- <path d="M141 112c-37-24-71-4-55 17 10 14 33 6 24-8"/><circle cx="69" cy="164" r="2"/><circle cx="79" cy="169" r="2"/><circle cx="73" cy="178" r="2"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 300" fill="none" stroke="black" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><svg x="140" y="0" width="100" height="300" viewBox="0 0 120 360" overflow="hidden">
+ <defs>
+  <g id="flower"><g id="petal"><path d="M0-10C-15-24-12-41 0-49C12-41 15-24 0-10Z"/><path d="M0-18V-37"/></g><use href="#petal" transform="rotate(45)"/><use href="#petal" transform="rotate(90)"/><use href="#petal" transform="rotate(135)"/><use href="#petal" transform="rotate(180)"/><use href="#petal" transform="rotate(225)"/><use href="#petal" transform="rotate(270)"/><use href="#petal" transform="rotate(315)"/><circle r="10"/><circle r="4"/></g>
+  <g id="leaves"><path d="M58 230C25 228 17 202 22 183C46 190 62 208 58 230ZM58 230l-29-37M55 300C88 294 105 268 98 246C74 253 56 273 55 300ZM55 300l35-43M62 344C36 343 27 325 30 309C49 313 64 326 62 344ZM62 344l-26-28"/></g>
+ </defs>
+ <!-- Stem gaps reserve clear space around each complete flower. Tile ends join vertically. -->
+ <path d="M58 0V30C58 49 58 58 58 74M58 166C58 205 44 245 55 300C60 323 66 345 58 360C58 382 58 408 58 434M58 526C58 565 44 605 55 660C60 683 66 699 58 710V720"/>
+ <use href="#flower" transform="translate(58 120) scale(.8)"/>
+ <use href="#leaves"/>
+ <use href="#flower" transform="translate(58 480) scale(.8)"/>
+ <use href="#leaves" transform="translate(0 360)"/>
+</svg></svg>
