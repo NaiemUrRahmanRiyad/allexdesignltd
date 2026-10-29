@@ -6,7 +6,7 @@ html[data-theme=dark] body #root .contact-dialog::before{background:#bcd0a5;opac
 @media(max-width:560px){html body #root .contact-dialog::before{opacity:.16;mask-size:145% auto;-webkit-mask-size:145% auto}}
 /* Matching botanical detail for the Ask ALLEX panel. */
 html body #root .faq-dialog{isolation:isolate}
-html body #root .faq-dialog::before{content:"";position:absolute;inset:0;min-height:100%;border-radius:inherit;background:#69816b;opacity:.19;mask:url('/form-botanical-detail.svg') center top / 145% auto repeat-y;-webkit-mask:url('/form-botanical-detail.svg') center top / 145% auto repeat-y;pointer-events:none;z-index:-1}
+html body #root .faq-dialog::before{content:"";position:absolute;inset:14px;min-height:0;border-radius:12px;background:#69816b;opacity:.19;mask:url('/form-botanical-detail.svg') center top / 120% auto repeat-y;-webkit-mask:url('/form-botanical-detail.svg') center top / 120% auto repeat-y;pointer-events:none;z-index:-1}
 html[data-theme=dark] body #root .faq-dialog::before{background:#bcd0a5;opacity:.17}
 /* Only two spacious editorial panels receive a quieter corner accent. */
 html body #root :is(.about-overview-card,.contact-invitation){position:relative;isolation:isolate}
