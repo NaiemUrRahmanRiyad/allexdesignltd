@@ -42,11 +42,12 @@ import './styles/form-detail.css';
 import './styles/page-botanical.css';
 import './styles/overview-refinement.css';
 import './styles/smooth-reveal.css';
-import './styles/architectural-accents.css';
+
 import './styles/card-floral-accents.css';
 const language = 'en';
 const app = <React.StrictMode><LanguageProvider initialLanguage={language}><Seo /><App /></LanguageProvider></React.StrictMode>;
 const root = document.getElementById('root');
 if (root.hasChildNodes()) hydrateRoot(root, app); else createRoot(root).render(app);
+
 
 
