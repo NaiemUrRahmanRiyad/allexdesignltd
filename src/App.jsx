@@ -59,6 +59,7 @@ export default function App() {
     </header>
     <main id="main">
       <span className="page-texture-detail" aria-hidden="true" />
+      <span className="page-grid-detail" aria-hidden="true" />
       <HeroSlideshow onBookConsultation={bookConsultation} />
       <section id="about" className="about section" aria-labelledby="about-title">
         <div className="about-overview-card">

@@ -3,7 +3,10 @@ html body,html[data-theme=dark] body{background-image:var(--page-wash);backgroun
 html body #root :is(.home-screen,.home-screen .hero-typewriter,main>.section),html[data-theme=dark] body #root :is(.home-screen,.home-screen .hero-typewriter,main>.section){background:transparent;border-top:0;border-bottom:0}
 html body #root main{position:relative;isolation:isolate}
 /* A small cached tile avoids full-page filters, masks and animation work. */
-html body #root .page-texture-detail{position:absolute;inset:0;z-index:-1;pointer-events:none;background:url('/textures/plaster-paper-v1.webp') repeat;background-size:640px 640px;mix-blend-mode:multiply;opacity:.38}
-html[data-theme=dark] body #root .page-texture-detail{mix-blend-mode:soft-light;opacity:.16}
+html body #root .page-texture-detail{position:absolute;inset:0;z-index:-1;pointer-events:none;background:url('/textures/plaster-paper-v1.webp') repeat;background-size:640px 640px;mix-blend-mode:multiply;opacity:.56}
+html[data-theme=dark] body #root .page-texture-detail{mix-blend-mode:soft-light;opacity:.26}
 /* Legacy per-section overlays must not restart the page's gradient or texture. */
 html body #root .services::before,html body #root .contact::before,html body #root .projects::after,html body #root .projects::before,html body #root .about.section::before,html body #root .about.section::after{content:none;background:none}
+
+/* The original fine grid sits independently above the plaster tile. */
+html body #root .page-grid-detail{position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(var(--page-grid-color) 1px,transparent 1px),linear-gradient(90deg,var(--page-grid-color) 1px,transparent 1px);background-size:72px 72px;opacity:.85}
