@@ -1,5 +1,5 @@
 /* Reuse the cached plaster tile behind card content; keep media and controls clean. */
 html body #root :is(.about-overview-card,.about-story,.service-card,.project-card,.interior-project-card,.adsteel-featured-photo-card,.project-process,.contact-invitation){position:relative;isolation:isolate}
 html body #root :is(.about-overview-card,.about-story,.service-card,.project-card,.interior-project-card,.adsteel-featured-photo-card,.project-process,.contact-invitation)::before{content:'';position:absolute;inset:1px;z-index:-1;border-radius:inherit;pointer-events:none;background:url('/textures/plaster-paper-v1.webp') repeat;background-size:480px 480px;mix-blend-mode:multiply;opacity:.2}
-html[data-theme=dark] body #root :is(.about-overview-card,.about-story,.service-card,.project-card,.interior-project-card,.adsteel-featured-photo-card,.project-process,.contact-invitation)::before{mix-blend-mode:multiply;opacity:.08}
+html[data-theme=dark] body #root :is(.about-overview-card,.about-story,.service-card,.project-card,.interior-project-card,.adsteel-featured-photo-card,.project-process,.contact-invitation)::before{content:none;display:none}
 @media(forced-colors:active){html body #root :is(.about-overview-card,.about-story,.service-card,.project-card,.interior-project-card,.adsteel-featured-photo-card,.project-process,.contact-invitation)::before{display:none}}
