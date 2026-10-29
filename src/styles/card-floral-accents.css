@@ -1,21 +1,11 @@
-/* Restrained botanical artwork in spacious cards only; forms use their own unchanged theme. */
+/* Restore the original delicate card flower; keep every card surface and layout intact. */
 html body #root :is(.about-overview-card,.project-process,.contact-invitation)>.botanical-corner-detail{inset:18px;border-radius:16px}
-html body #root :is(.about-overview-card,.project-process,.contact-invitation)>.botanical-corner-detail::before{right:0;top:0;width:155px;height:195px;background:#62795e;opacity:.19;mask:url('/card-botanical-sprig.svg') right top / contain no-repeat;-webkit-mask:url('/card-botanical-sprig.svg') right top / contain no-repeat}
-html body #root .about-overview-card>.botanical-corner-detail::before{width:190px;height:230px;opacity:.2}
-html body #root .contact-invitation>.botanical-corner-detail::before{top:auto;bottom:0;width:125px;height:155px;opacity:.17}
-html[data-theme=dark] body #root :is(.about-overview-card,.project-process,.contact-invitation)>.botanical-corner-detail::before{background:#c9d5b5;opacity:.17}
-html body #root footer.site-footer::before{mask-image:url('/card-botanical-sprig.svg');-webkit-mask-image:url('/card-botanical-sprig.svg');mask-size:contain;-webkit-mask-size:contain;opacity:.26}
-@media(max-width:700px){html body #root :is(.about-overview-card,.project-process,.contact-invitation)>.botanical-corner-detail{inset:14px}html body #root :is(.about-overview-card,.project-process,.contact-invitation)>.botanical-corner-detail::before{width:115px;height:145px;opacity:.13}}
-/* Detailed rose bouquet for About, matching rose sprigs for spacious cards. */
-html body #root .about-overview-card>.botanical-corner-detail::before{width:240px;height:295px;opacity:.24;mask-image:url('/about-rose-bouquet.svg');-webkit-mask-image:url('/about-rose-bouquet.svg')}
-html body #root .contact-invitation>.botanical-corner-detail::before{top:auto;bottom:0;width:155px;height:190px;opacity:.28}
-html[data-theme=dark] body #root .about-overview-card>.botanical-corner-detail::before{opacity:.22}
-html[data-theme=dark] body #root .contact-invitation>.botanical-corner-detail::before{opacity:.25}
-html body #root footer.site-footer::before{width:170px;height:calc(100% - 12px);max-height:130px;bottom:6px;right:10px;opacity:.38;mask-image:url('/footer-flowering-tree.svg');-webkit-mask-image:url('/footer-flowering-tree.svg')}
-html[data-theme=dark] body #root footer.site-footer::before{opacity:.4}
-@media(min-width:701px){html body #root footer.site-footer .footer-copyright{margin-right:135px}}
-@media(max-width:700px){html body #root .about-overview-card>.botanical-corner-detail::before{width:155px;height:200px;opacity:.19}html body #root .contact-invitation>.botanical-corner-detail::before{width:125px;height:155px;opacity:.23}html body #root footer.site-footer::before{width:140px;height:110px;bottom:9px;right:10px;opacity:.32}}
-/* Keep the conversation rose below its paragraph and the footer tree clear of floating controls. */
-html body #root .contact-invitation>.botanical-corner-detail::before{height:160px;width:150px}
-@media(min-width:701px){html body #root footer.site-footer::before{right:80px}html body #root footer.site-footer .footer-copyright{margin-right:185px}}
-@media(max-width:700px){html body #root .contact-invitation>.botanical-corner-detail::before{height:140px;width:120px}html body #root footer.site-footer::before{bottom:82px;width:110px;height:100px;right:12px}}
+html body #root :is(.about-overview-card,.project-process,.contact-invitation)>.botanical-corner-detail::before{right:0;top:0;width:155px;height:195px;background:#62795e;opacity:.18;mask:url('/about-botanical-corner.svg') right top / contain no-repeat;-webkit-mask:url('/about-botanical-corner.svg') right top / contain no-repeat}
+html body #root .about-overview-card>.botanical-corner-detail::before{width:230px;height:270px;opacity:.17}
+html body #root .contact-invitation>.botanical-corner-detail::before{top:auto;bottom:0;width:115px;height:140px;opacity:.18}
+html[data-theme=dark] body #root :is(.about-overview-card,.project-process,.contact-invitation)>.botanical-corner-detail::before{background:#c9d5b5;opacity:.15}
+/* A low horizontal sprig suits the compact footer better than a tree. */
+html body #root footer.site-footer::before{width:150px;height:64px;max-height:none;bottom:18px;right:80px;opacity:.32;mask:url('/footer-botanical-branch.svg') center / contain no-repeat;-webkit-mask:url('/footer-botanical-branch.svg') center / contain no-repeat}
+html[data-theme=dark] body #root footer.site-footer::before{opacity:.3}
+@media(min-width:701px){html body #root footer.site-footer .footer-copyright{margin-right:155px}}
+@media(max-width:700px){html body #root :is(.about-overview-card,.project-process,.contact-invitation)>.botanical-corner-detail{inset:14px}html body #root :is(.about-overview-card,.project-process,.contact-invitation)>.botanical-corner-detail::before{width:125px;height:155px;opacity:.13}html body #root .contact-invitation>.botanical-corner-detail::before{width:110px;height:135px}html body #root footer.site-footer::before{width:100px;height:50px;bottom:82px;right:16px;opacity:.25}}
