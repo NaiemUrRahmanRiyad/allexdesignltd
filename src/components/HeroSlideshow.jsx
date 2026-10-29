@@ -1,6 +1,6 @@
 import { memo } from 'react';
 import { Localize } from '../i18n/Language.jsx';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import slideOne from '../../images/allex-home-slide-001.jpeg';
 import slideTwo from '../../images/allex-home-slide-002.jpeg';
 import { Typewriter, useReducedMotion } from './Effects.jsx';
@@ -45,6 +45,13 @@ function preloadSlide(slide, priority = 'high') {
 }
 
 function HeroSlideshow({ onBookConsultation }) {
+  const home=useRef();
+  useEffect(()=>{
+    const element=home.current;
+    const update=()=>document.documentElement.style.setProperty('--home-pattern-offset',`${element.offsetHeight}px`);
+    update();const observer=new ResizeObserver(update);observer.observe(element);
+    return ()=>{observer.disconnect();document.documentElement.style.removeProperty('--home-pattern-offset');};
+  },[]);
   const [activeSlide, setActiveSlide] = useState(0);
   const [loadedSlides, setLoadedSlides] = useState(() => new Set([0]));
   const [paused, setPaused] = useState(false);
@@ -100,7 +107,7 @@ function HeroSlideshow({ onBookConsultation }) {
     return () => window.clearInterval(timer);
   }, [activeSlide, paused, focused, reducedMotion, loadedSlides]);
 
-  return <Localize><div className="home-screen">
+  return <Localize><div className="home-screen" ref={home}>
     <span className="home-rose-corners" aria-hidden="true" />
     <section
       id="home"
