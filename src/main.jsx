@@ -44,6 +44,7 @@ import './styles/overview-refinement.css';
 import './styles/smooth-reveal.css';
 
 import './styles/card-floral-accents.css';
+import './styles/spacing-footer-refinement.css';
 const language = 'en';
 const app = <React.StrictMode><LanguageProvider initialLanguage={language}><Seo /><App /></LanguageProvider></React.StrictMode>;
 const root = document.getElementById('root');

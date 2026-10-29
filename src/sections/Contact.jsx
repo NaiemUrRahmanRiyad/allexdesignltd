@@ -20,6 +20,12 @@ function ContactIcon({ name }) {
   return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.7a8 8 0 0 1-11.8 7L4 20l1.4-4.1A8 8 0 1 1 20 11.7Z" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round" /><path d="M9 8.5c.3-.5.6-.5.9-.5l.6 1.6-.7.9c.6 1.2 1.5 2 2.7 2.6l.8-.8 1.7.7c.1.4 0 .8-.4 1.1-.6.5-1.4.7-2.2.4-2.1-.7-4.3-2.8-5-4.8-.3-.7.2-1.4.6-1.9Z" fill="currentColor" /></svg>;
 }
 
+export function QuickContactDock(){return (<div className="quick-contact-dock" role="group" aria-label="Quick contact">
+      <a href={content.contact.phoneUrl} aria-label={`Call ${content.contact.phone}`}><ContactIcon name="Phone" /><span>Call</span></a>
+      <a href={content.contact.whatsappUrl} target="_blank" rel="noopener noreferrer" aria-label="Contact ALLEX on WhatsApp"><ContactIcon name="WhatsApp" /><span>WhatsApp</span></a>
+      <a href={content.contact.emailUrl} aria-label={`Email ${content.contact.email}`}><ContactIcon name="Email" /><span>Email</span></a>
+    </div>);}
+
 function Contact({ openRequest, initialSubject, initialProduct, onOpenForm }) {
   const consultation = initialSubject === 'Consultation';
   const [whatsappDraft, setWhatsappDraft] = useState('');
@@ -97,11 +103,6 @@ function Contact({ openRequest, initialSubject, initialProduct, onOpenForm }) {
         <button type="button" className="button contact-cta" onClick={() => onOpenForm()}>Start a conversation<span aria-hidden="true">↗</span></button>
       </div>
     </section>
-    <div className="quick-contact-dock" role="group" aria-label="Quick contact">
-      <a href={content.contact.phoneUrl} aria-label={`Call ${content.contact.phone}`}><ContactIcon name="Phone" /><span>Call</span></a>
-      <a href={content.contact.whatsappUrl} target="_blank" rel="noopener noreferrer" aria-label="Contact ALLEX on WhatsApp"><ContactIcon name="WhatsApp" /><span>WhatsApp</span></a>
-      <a href={content.contact.emailUrl} aria-label={`Email ${content.contact.email}`}><ContactIcon name="Email" /><span>Email</span></a>
-    </div>
     <dialog className="contact-dialog" ref={dialog} aria-labelledby="contact-dialog-title" onCancel={event => { event.preventDefault(); dialog.current.close(); }} onKeyDown={event => { if (event.key === 'Escape') { event.preventDefault(); dialog.current.close(); } }} onClick={event => { if (isDialogBackdropClick(event, dialog.current)) dialog.current.close(); }}>
       <button className="dialog-close" type="button" aria-label="Close contact form" onClick={() => dialog.current.close()}>×</button>
       <p className="eyebrow">GET IN TOUCH</p>

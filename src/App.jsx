@@ -9,7 +9,7 @@ import { serviceDirectory } from './data/service-directory.js';
 import { Counter, PageControls, useScrollReveal } from './components/Effects.jsx';
 import HeroSlideshow from './components/HeroSlideshow.jsx';
 import ProjectCard from './components/ProjectCard.jsx';
-import Contact from './sections/Contact.jsx';
+import Contact, { QuickContactDock } from './sections/Contact.jsx';
 import Furniture from './sections/Furniture.jsx';
 import InteriorProjects from './sections/InteriorProjects.jsx';
 import ThemeToggle from './components/ThemeToggle.jsx';
@@ -143,10 +143,11 @@ export default function App() {
         <div className="project-grid">{validProjects.map((project, i) => <ProjectCard key={project.id} project={project} index={i} />)}</div>
       </section>
       <Clients />
-      <FaqChatbot onConsultation={bookConsultation} />
       <Contact openRequest={contactRequest.id} initialSubject={contactRequest.subject} initialProduct={contactRequest.product} onOpenForm={openContactForm} />
     </main>
     <footer className="site-footer" data-reveal data-reveal-repeat><div className="footer-brand"><a href="#home" className="footer-logo" aria-label="ALLEX home"><img src={logo} alt="ALLEX Design and Development Ltd." width="60" height="56" /></a><div><p>{content.name}</p><span>Design · Furniture · Execution</span></div></div><small className="footer-copyright">© 2026 All rights reserved.</small></footer>
+    <FaqChatbot onConsultation={bookConsultation} />
+    <QuickContactDock />
   </Localize>;
 }
 
