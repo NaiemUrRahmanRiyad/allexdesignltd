@@ -58,7 +58,7 @@ export default function App() {
       <nav id="navigation" className={menu ? 'open' : ''}>{[['home', 'Home'], ['about', 'About Us'], ['services', 'Services'], ['projects', 'Projects']].map(([id, label]) => id === 'services' ? <ServicesDropdown key={id} active={['services','furniture','adsteel','interior-design','interior-projects'].includes(activeNav)} onNavigate={target=>{setActiveNav(target);setMenu(false);}} /> : <a key={id} href={`#${id}`} aria-current={activeNav === id ? 'location' : undefined} onClick={() => { setActiveNav(id); setMenu(false); }}>{label}</a>)}<button className="contact-nav-trigger" onClick={() => { setMenu(false); openContactForm(); }}>Let’s talk <span aria-hidden="true">↗</span></button></nav>
     </header>
     <main id="main">
-      <span className="page-grid-detail" aria-hidden="true" />
+      <span className="page-texture-detail" aria-hidden="true" />
       <HeroSlideshow onBookConsultation={bookConsultation} />
       <section id="about" className="about section" aria-labelledby="about-title">
         <div className="about-overview-card">
