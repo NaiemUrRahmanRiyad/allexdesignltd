@@ -1,0 +1,19 @@
+/* Mobile spacing refinements only: preserve all materials, type and animation. */
+@media(max-width:700px){
+  html body #root :is(button,a[href],summary){touch-action:manipulation}
+  html body #root .furniture-text-link{display:inline-flex;align-items:center;min-height:44px;box-sizing:border-box}
+  html body #root .allex-welcome-close{width:44px;min-width:44px;height:44px;min-height:44px;right:0;top:0}
+  html body #root .allex-welcome a{padding-right:46px}
+  html body #root button:not(.dialog-close):not(.back-top):is(.hero-slide-indicator,.hero-autoplay-toggle){width:44px;min-width:44px;height:44px;min-height:44px}
+  html body #root .attachment-list button{min-height:44px}
+  html body #root .furniture-grid{gap:18px 12px}
+  html body #root :is(.service-grid,.interior-project-list,.adsteel-example-grid,.project-grid){gap:18px}
+}
+@media(max-width:420px){
+  html body #root main>.section,html body #root main>.services.section,html body #root main>.service-overview.section{padding-block:36px}
+  html body #root :is(.service-grid,.interior-project-list,.adsteel-example-grid,.project-grid){padding:12px}
+  html body #root .about-overview-card{padding:22px 18px}
+  html body #root .service-card-copy{padding:20px 16px}
+  html body #root :is(.service-intro,.project-intro,.furniture-intro,.adsteel-intro,.interior-projects-heading,.clients-heading){margin-bottom:22px}
+  html body #root .overview-next-step{gap:14px;margin-top:24px}
+}

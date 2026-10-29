@@ -5,7 +5,7 @@ export function useMobileViewport() {
   useEffect(() => {
     const root = document.documentElement;
     const viewport = window.visualViewport;
-    let frame, focusTimer, baselineHeight = window.innerHeight, previous = '';
+    let frame, focusTimer, baselineHeight = window.innerHeight, previous = '', previousActive;
     function update() {
       frame = undefined;
       const active = document.activeElement;
@@ -25,6 +25,9 @@ export function useMobileViewport() {
           root.style.removeProperty('--mobile-viewport-top');
         }
       }
+      const focusChanged = previousActive !== active;
+      previousActive = active;
+      if (!changed && !focusChanged) return;
       clearTimeout(focusTimer);
       if (state.keyboard && active?.closest('dialog[open]')) {
         focusTimer = setTimeout(() => {
