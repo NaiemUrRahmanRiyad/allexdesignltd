@@ -1,0 +1,17 @@
+/* Decorative layers are contained beneath content, never on photos or controls. */
+html body #root :is(.service-grid,.interior-project-list,.furniture-grid,.adsteel-example-grid,.project-grid){position:relative;isolation:isolate}
+html body #root :is(.service-grid,.interior-project-list,.furniture-grid,.adsteel-example-grid,.project-grid)::before{
+  content:"";position:absolute;inset:10px 12px auto auto;width:150px;height:180px;
+  background:#708062;opacity:.18;z-index:-1;pointer-events:none;
+  mask:url('/about-botanical-corner.svg') right top / contain no-repeat;
+  -webkit-mask:url('/about-botanical-corner.svg') right top / contain no-repeat;
+}
+html body #root :is(.service-card-copy,.interior-project-copy,.adsteel-example-copy){position:relative;isolation:isolate}
+html body #root :is(.service-card-copy,.interior-project-copy,.adsteel-example-copy)::before{
+  content:"";position:absolute;inset:auto 8px 8px auto;width:68px;height:88px;
+  background:#708062;opacity:.14;z-index:-1;pointer-events:none;
+  mask:url('/about-botanical-corner.svg') right bottom / contain no-repeat;
+  -webkit-mask:url('/about-botanical-corner.svg') right bottom / contain no-repeat;
+}
+html[data-theme=dark] body #root :is(.service-grid,.interior-project-list,.furniture-grid,.adsteel-example-grid,.project-grid,.service-card-copy,.interior-project-copy,.adsteel-example-copy)::before{background:#c1d0a9;opacity:.13}
+@media(max-width:700px){html body #root :is(.service-grid,.interior-project-list,.furniture-grid,.adsteel-example-grid,.project-grid)::before{width:105px;height:130px;inset:8px 8px auto auto}html body #root :is(.service-card-copy,.interior-project-copy,.adsteel-example-copy)::before{width:55px;height:72px;opacity:.1}}

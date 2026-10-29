@@ -1,10 +1,10 @@
-/* Restrained design/structure signatures in the empty heading margin only. */
+/* A small floral signature stays within the empty heading margin. */
 html body #root :is(#services,#interior-projects,#adsteel){position:relative}
 html body #root :is(#services,#interior-projects,#adsteel)::before{
   content:"";position:absolute;inset:auto;right:clamp(20px,5.5vw,88px);top:12px;z-index:0;
   width:112px;height:40px;background:var(--brass);opacity:.45;
-  mask:url('/architectural-section-mark.svg') center / contain no-repeat;
-  -webkit-mask:url('/architectural-section-mark.svg') center / contain no-repeat;
+  mask:url('/floral-heading-mark.svg') center / contain no-repeat;
+  -webkit-mask:url('/floral-heading-mark.svg') center / contain no-repeat;
   pointer-events:none;
 }
 html[data-theme=dark] body #root :is(#services,#interior-projects,#adsteel)::before{opacity:.4}
