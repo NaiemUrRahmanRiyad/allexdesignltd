@@ -16,7 +16,7 @@ function InteriorProjects({onEnquire}) {
    <div className="interior-project-copy"><div><h3>{project.company}</h3><p className="interior-project-scope">{project.scope}</p><p>{project.description}</p><button type="button" className="furniture-text-link interior-gallery-link" aria-haspopup="dialog" onClick={()=>setSelectedPhoto({...project.images[0],images:project.images,title:project.company,type:project.scope,index:0,count:project.images.length})}>View all {project.images.length} photos <span aria-hidden="true">↗</span></button></div></div>
   </article>)}</div>
   {visibleCount<interiorProjects.length&&<div className="interior-project-actions"><button type="button" className="button" aria-controls="interior-project-collection" onClick={()=>setVisibleCount(count=>count+6)}>Show more projects <span aria-hidden="true">↓</span></button></div>}
-  <div className="overview-next-step" data-reveal><p>{'Tell us about your space, requirements and style.'}</p><div className="overview-actions"><button type="button" className="button" onClick={()=>onEnquire('Interior design consultation')}>{'Discuss your interior'} <span aria-hidden="true">↗</span></button>{service.website?<a className="furniture-text-link" href={service.website} target="_blank" rel="noopener noreferrer">{'Visit interior website ↗'}</a>:<a className="furniture-text-link" href="#projects">{'Watch project films ↗'}</a>}</div></div>
+  <div className="interior-consultation-action"><button type="button" className="button" onClick={()=>onEnquire('Interior design consultation')}>Discuss your interior <span aria-hidden="true">↗</span></button></div>
   <ProjectImageDialog photo={selectedPhoto} onClose={()=>setSelectedPhoto(null)} titleId="interior-image-title" />
  </section>;
 }
