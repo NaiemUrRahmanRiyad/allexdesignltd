@@ -22,3 +22,5 @@ html[data-theme=dark] .interior-project-card{background:linear-gradient(135deg,#
 @media(max-width:1100px){.interior-project-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.interior-project-list{grid-template-columns:1fr;gap:18px}.interior-project-copy{padding:20px 16px}}
 @media(prefers-reduced-motion:reduce){.interior-project-image img{transition:none}}
+
+.interior-gallery-link{margin-top:16px;cursor:pointer}

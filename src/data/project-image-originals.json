@@ -198,5 +198,257 @@
     "imageIndex": 1,
     "difference": 6.149,
     "source": "AD Steel 2026 supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/transcom-1.webp",
+    "fullSrc": "/interior-projects/originals/transcom-1.jpg",
+    "width": 594,
+    "height": 396,
+    "page": 60,
+    "imageIndex": 0,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/transcom-2.webp",
+    "fullSrc": "/interior-projects/originals/transcom-2.jpg",
+    "width": 595,
+    "height": 441,
+    "page": 60,
+    "imageIndex": 1,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/transcom-3.webp",
+    "fullSrc": "/interior-projects/originals/transcom-3.jpg",
+    "width": 522,
+    "height": 396,
+    "page": 61,
+    "imageIndex": 0,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/transcom-4.webp",
+    "fullSrc": "/interior-projects/originals/transcom-4.jpg",
+    "width": 522,
+    "height": 440,
+    "page": 61,
+    "imageIndex": 3,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/residential-bedrooms-1.webp",
+    "fullSrc": "/interior-projects/originals/residential-bedrooms-1.jpg",
+    "width": 399,
+    "height": 266,
+    "page": 76,
+    "imageIndex": 1,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/residential-bedrooms-2.webp",
+    "fullSrc": "/interior-projects/originals/residential-bedrooms-2.jpg",
+    "width": 407,
+    "height": 291,
+    "page": 76,
+    "imageIndex": 2,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/residential-bedrooms-3.webp",
+    "fullSrc": "/interior-projects/originals/residential-bedrooms-3.jpg",
+    "width": 233,
+    "height": 277,
+    "page": 76,
+    "imageIndex": 3,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/residential-bedrooms-4.webp",
+    "fullSrc": "/interior-projects/originals/residential-bedrooms-4.jpg",
+    "width": 158,
+    "height": 278,
+    "page": 76,
+    "imageIndex": 0,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/residential-bedrooms-5.webp",
+    "fullSrc": "/interior-projects/originals/residential-bedrooms-5.jpg",
+    "width": 195,
+    "height": 277,
+    "page": 76,
+    "imageIndex": 4,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/residential-living-1.webp",
+    "fullSrc": "/interior-projects/originals/residential-living-1.jpg",
+    "width": 365,
+    "height": 290,
+    "page": 77,
+    "imageIndex": 2,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/residential-living-2.webp",
+    "fullSrc": "/interior-projects/originals/residential-living-2.jpg",
+    "width": 325,
+    "height": 267,
+    "page": 77,
+    "imageIndex": 3,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/residential-living-3.webp",
+    "fullSrc": "/interior-projects/originals/residential-living-3.jpg",
+    "width": 266,
+    "height": 267,
+    "page": 77,
+    "imageIndex": 1,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/residential-living-4.webp",
+    "fullSrc": "/interior-projects/originals/residential-living-4.jpg",
+    "width": 226,
+    "height": 276,
+    "page": 77,
+    "imageIndex": 0,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/residential-living-5.webp",
+    "fullSrc": "/interior-projects/originals/residential-living-5.jpg",
+    "width": 227,
+    "height": 304,
+    "page": 77,
+    "imageIndex": 4,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/residential-family-living-1.webp",
+    "fullSrc": "/interior-projects/originals/residential-family-living-1.jpg",
+    "width": 369,
+    "height": 277,
+    "page": 78,
+    "imageIndex": 0,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/residential-family-living-2.webp",
+    "fullSrc": "/interior-projects/originals/residential-family-living-2.jpg",
+    "width": 325,
+    "height": 277,
+    "page": 79,
+    "imageIndex": 0,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/residential-family-living-3.webp",
+    "fullSrc": "/interior-projects/originals/residential-family-living-3.jpg",
+    "width": 263,
+    "height": 278,
+    "page": 79,
+    "imageIndex": 3,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/residential-dining-1.webp",
+    "fullSrc": "/interior-projects/originals/residential-dining-1.jpg",
+    "width": 348,
+    "height": 294,
+    "page": 79,
+    "imageIndex": 2,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/residential-dining-2.webp",
+    "fullSrc": "/interior-projects/originals/residential-dining-2.jpg",
+    "width": 311,
+    "height": 234,
+    "page": 78,
+    "imageIndex": 5,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/residential-dining-3.webp",
+    "fullSrc": "/interior-projects/originals/residential-dining-3.jpg",
+    "width": 279,
+    "height": 233,
+    "page": 78,
+    "imageIndex": 2,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/residential-dining-4.webp",
+    "fullSrc": "/interior-projects/originals/residential-dining-4.jpg",
+    "width": 327,
+    "height": 513,
+    "page": 78,
+    "imageIndex": 3,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/residential-dining-5.webp",
+    "fullSrc": "/interior-projects/originals/residential-dining-5.jpg",
+    "width": 264,
+    "height": 295,
+    "page": 78,
+    "imageIndex": 4,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/residential-dining-6.webp",
+    "fullSrc": "/interior-projects/originals/residential-dining-6.jpg",
+    "width": 240,
+    "height": 294,
+    "page": 79,
+    "imageIndex": 1,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/residential-kitchens-1.webp",
+    "fullSrc": "/interior-projects/originals/residential-kitchens-1.jpg",
+    "width": 594,
+    "height": 352,
+    "page": 80,
+    "imageIndex": 1,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/residential-kitchens-2.webp",
+    "fullSrc": "/interior-projects/originals/residential-kitchens-2.jpg",
+    "width": 371,
+    "height": 333,
+    "page": 80,
+    "imageIndex": 0,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/residential-bathrooms-1.webp",
+    "fullSrc": "/interior-projects/originals/residential-bathrooms-1.jpg",
+    "width": 591,
+    "height": 352,
+    "page": 81,
+    "imageIndex": 1,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/residential-bathrooms-2.webp",
+    "fullSrc": "/interior-projects/originals/residential-bathrooms-2.jpg",
+    "width": 289,
+    "height": 278,
+    "page": 81,
+    "imageIndex": 0,
+    "source": "Interior Profile supplied PDF"
+  },
+  {
+    "thumbnail": "/interior-projects/selected/residential-bathrooms-3.webp",
+    "fullSrc": "/interior-projects/originals/residential-bathrooms-3.jpg",
+    "width": 298,
+    "height": 277,
+    "page": 81,
+    "imageIndex": 2,
+    "source": "Interior Profile supplied PDF"
   }
 ]

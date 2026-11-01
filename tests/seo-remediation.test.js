@@ -6,16 +6,18 @@ import { clients } from '../src/data/clients.js';
 import { legacyRedirects, netlifyRedirects, apacheRedirects } from '../shared/legacy-redirects.js';
 import { navigationRouting } from '../scripts/local-seo-routing.mjs';
 
-test('collapsed project and client information is present in initial English HTML',()=>{
+test('all interior cards and collapsed client information are present in initial English HTML',()=>{
  for(const language of ['en']){
   const html=fs.readFileSync('dist/index.html','utf8');
   for(const project of interiorProjects){
-   assert.ok(html.includes(project.company),project.company);
+   assert.ok(html.includes(project.company.replaceAll('&','&amp;')),project.company);
    assert.ok(html.includes(project.description),project.id);
-   for(const image of project.images)assert.ok(html.includes(image.src));
+   for(const image of project.images.slice(0,2))assert.ok(html.includes(image.src));
+   for(const image of project.images)assert.ok(fs.existsSync(`public${image.src}`),image.src);
   }
   for(const client of clients)assert.ok(html.includes(client.image),client.id);
-  assert.equal((html.match(/class="interior-project-card" hidden=""/g)||[]).length,3);
+  assert.equal((html.match(/class="interior-project-card" hidden=""/g)||[]).length,0);
+  assert.equal((html.match(/class="interior-project-card"/g)||[]).length,interiorProjects.length);
   assert.ok(html.includes('id="additional-client-logos" hidden=""'));
   for(const image of html.matchAll(/<img\b[^>]*>/g)){
    assert.match(image[0],/\bwidth="[1-9]\d*"/);

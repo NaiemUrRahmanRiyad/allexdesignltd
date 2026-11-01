@@ -7,9 +7,7 @@
       "id": "parliament",
       "company": "National Parliament House",
       "scope": "North Plaza office renovation",
-      "scopeBn": "উত্তর প্লাজা অফিস সংস্কার",
-      "description": "The North Plaza office renovation brings together reception and lounge areas, office zones, workstations, training facilities and a conference room. Timber finishes and geometric screens give the spaces a coordinated character, while generous circulation connects everyday work areas with shared facilities.",
-      "descriptionBn": "উত্তর প্লাজার অফিস সংস্কারে রিসেপশন ও লাউঞ্জ, অফিস জোন, ওয়ার্কস্টেশন, প্রশিক্ষণকক্ষ এবং কনফারেন্স রুম অন্তর্ভুক্ত। কাঠের ফিনিশ ও জ্যামিতিক স্ক্রিন জায়গাগুলোকে সামঞ্জস্যপূর্ণ পরিচয় দিয়েছে। প্রশস্ত চলাচলের পথ দৈনন্দিন কাজের জায়গার সঙ্গে যৌথ সুবিধাগুলোকে যুক্ত করেছে।",
+      "description": "The North Plaza office renovation includes reception and lounge areas, workstations, training rooms and a conference room. Wood finishes and geometric screens give these spaces a consistent look.",
       "images": [
         {
           "src": "/interior-projects/selected/parliament-1.webp",
@@ -33,9 +31,7 @@
       "id": "dot-birth",
       "company": "Dot Birth",
       "scope": "Creative office interior",
-      "scopeBn": "ক্রিয়েটিভ অফিস ইন্টেরিয়র",
-      "description": "Designed for a Dhaka-based creative company, this office combines a welcoming reception and waiting area with shared workstations, a dry kitchen and dining space. Planted partitions, open shelving and a restrained material palette reflect the brand’s creative identity while supporting teamwork and informal interaction.",
-      "descriptionBn": "ঢাকাভিত্তিক একটি ক্রিয়েটিভ প্রতিষ্ঠানের এই অফিসে রিসেপশন ও অপেক্ষার জায়গার সঙ্গে শেয়ারড ওয়ার্কস্টেশন, ড্রাই কিচেন ও ডাইনিং স্পেস রাখা হয়েছে। গাছের পার্টিশন, খোলা তাক এবং সংযত রং ও উপকরণের ব্যবহার ব্র্যান্ডের সৃজনশীল পরিচয় তুলে ধরে। বিন্যাসটি দলগত কাজ ও অনানুষ্ঠানিক আলোচনার উপযোগী।",
+      "description": "This creative office brings together reception, shared workstations, a dry kitchen and dining space. Planted partitions and open shelving separate areas while keeping the office open and connected.",
       "images": [
         {
           "src": "/interior-projects/selected/dot-birth-1.webp",
@@ -59,9 +55,7 @@
       "id": "bateel",
       "company": "Bateel",
       "scope": "Retail showroom interior",
-      "scopeBn": "রিটেইল শোরুম ইন্টেরিয়র",
-      "description": "This international gourmet brand’s showroom pairs illuminated display counters with wall shelving and warm, coordinated finishes. The interior reflects Bateel’s refined retail identity, giving its dates and gourmet products a clear visual focus. The arrangement balances product presentation with a welcoming browsing experience.",
-      "descriptionBn": "আন্তর্জাতিক গুরমে ব্র্যান্ডের এই শোরুমে আলোকিত ডিসপ্লে কাউন্টার, দেয়ালের তাক এবং উষ্ণ রঙের সামঞ্জস্যপূর্ণ ফিনিশ ব্যবহার করা হয়েছে। ইন্টেরিয়রটি Bateel-এর পরিশীলিত পরিচয় তুলে ধরে এবং খেজুর ও গুরমে পণ্যকে দৃশ্যমান গুরুত্ব দেয়। পণ্য প্রদর্শন ও স্বাচ্ছন্দ্যে ঘুরে দেখার অভিজ্ঞতা মিলিয়ে বিন্যাসটি সাজানো।",
+      "description": "The Bateel showroom uses lit display counters, wall shelving and warm finishes to present dates and gourmet products. The layout leaves room for customers to browse comfortably.",
       "images": [
         {
           "src": "/interior-projects/selected/bateel-1.webp",
@@ -84,9 +78,7 @@
       "id": "brac-it",
       "company": "BRAC IT",
       "scope": "Office & meeting spaces",
-      "scopeBn": "অফিস ও মিটিং স্পেস",
-      "description": "The BRAC IT office portfolio includes open workstations, conference and meeting rooms, training facilities, executive rooms, and a dining area with a dry kitchen. Glass partitions and a consistent finish palette connect the spaces visually, while separate rooms accommodate discussions, training and focused work alongside the main office floor.",
-      "descriptionBn": "BRAC IT-এর অফিস পোর্টফোলিওতে উন্মুক্ত ওয়ার্কস্টেশন, কনফারেন্স ও মিটিং রুম, প্রশিক্ষণকক্ষ, নির্বাহী কক্ষ এবং ড্রাই কিচেনসহ ডাইনিং এরিয়া রয়েছে। কাচের পার্টিশন ও সামঞ্জস্যপূর্ণ ফিনিশ জায়গাগুলোর মধ্যে দৃশ্যগত সংযোগ রাখে। মূল অফিসের পাশাপাশি পৃথক কক্ষগুলো আলোচনা, প্রশিক্ষণ ও মনোযোগী কাজের সুযোগ দেয়।",
+      "description": "The BRAC IT office includes shared workstations, meeting and training rooms, executive rooms and a dining area. Glass partitions separate rooms while keeping the office visually connected.",
       "images": [
         {
           "src": "/interior-projects/selected/brac-it-1.webp",
@@ -107,12 +99,46 @@
       ]
     },
     {
+      "id": "transcom",
+      "company": "Transcom",
+      "scope": "Office interior",
+      "description": "Open workstations, shared desk layouts and exposed ceiling details create a connected workplace with clear circulation.",
+      "images": [
+        {
+          "src": "/interior-projects/selected/transcom-1.webp",
+          "alt": "Transcom — Office interior, view 1",
+          "width": 594,
+          "height": 396
+        },
+        {
+          "src": "/interior-projects/selected/transcom-2.webp",
+          "alt": "Transcom — Office interior, view 2",
+          "width": 595,
+          "height": 441
+        },
+        {
+          "src": "/interior-projects/selected/transcom-3.webp",
+          "alt": "Transcom — Office interior, view 3",
+          "width": 522,
+          "height": 396
+        },
+        {
+          "src": "/interior-projects/selected/transcom-4.webp",
+          "alt": "Transcom — Office interior, view 4",
+          "width": 522,
+          "height": 440
+        }
+      ],
+      "sourcePages": [
+        60,
+        61
+      ]
+    },
+    {
       "id": "pepsico",
       "company": "PepsiCo",
       "scope": "Office interior",
-      "scopeBn": "অফিস ইন্টেরিয়র",
-      "description": "The PepsiCo office combines open desk arrangements with dedicated meeting spaces. Colourful branded graphics introduce a lively identity to the work floor, balanced by neutral furniture and ceiling finishes. Glazed meeting areas and clearly defined desk rows give the interior a connected, organized feel.",
-      "descriptionBn": "PepsiCo-এর অফিসে খোলামেলা ডেস্ক বিন্যাসের সঙ্গে পৃথক মিটিং স্পেস রাখা হয়েছে। রঙিন ব্র্যান্ড গ্রাফিক্স কর্মস্থলে প্রাণবন্ত পরিচয় এনেছে, যার সঙ্গে নিরপেক্ষ রঙের আসবাব ও ছাদের ফিনিশ ভারসাম্য রাখে। কাচঘেরা মিটিং এরিয়া ও সুস্পষ্ট ডেস্কের সারি ইন্টেরিয়রকে সংযুক্ত ও গোছানো অনুভূতি দেয়।",
+      "description": "The PepsiCo office combines open workstations with glass meeting rooms. Brand graphics add colour, while neutral furniture and finishes keep the work areas simple and organized.",
       "images": [
         {
           "src": "/interior-projects/selected/pepsico-1.webp",
@@ -136,9 +162,7 @@
       "id": "pathao",
       "company": "Pathao",
       "scope": "Office & lounge interior",
-      "scopeBn": "অফিস ও লাউঞ্জ ইন্টেরিয়র",
-      "description": "The Pathao office and lounge portfolio brings together reception, lounge seating, a CEO room and a boardroom. Curved seating, flowing ceiling lines and integrated warm lighting create a distinctive shared-space identity. Brand accents and varied seating arrangements give the lounge an inviting setting for waiting and informal conversations.",
-      "descriptionBn": "Pathao-এর অফিস ও লাউঞ্জ পোর্টফোলিওতে রিসেপশন, লাউঞ্জ সিটিং, সিইও কক্ষ ও বোর্ডরুম রয়েছে। বাঁকানো আসন, ছাদের প্রবাহমান রেখা এবং সমন্বিত উষ্ণ আলো যৌথ জায়গাগুলোকে স্বতন্ত্র পরিচয় দেয়। ব্র্যান্ডের উপাদান ও বৈচিত্র্যময় বসার বিন্যাস অপেক্ষা ও অনানুষ্ঠানিক আলোচনার জন্য স্বাচ্ছন্দ্যময় পরিবেশ তৈরি করে।",
+      "description": "The Pathao office includes reception, lounge seating, a CEO room and a boardroom. Curved seating and warm lighting give the lounge a comfortable setting for waiting and informal conversations.",
       "images": [
         {
           "src": "/interior-projects/selected/pathao-1.webp",
@@ -156,6 +180,218 @@
       "sourcePages": [
         70,
         71
+      ]
+    },
+    {
+      "id": "residential-bedrooms",
+      "company": "Bedrooms",
+      "scope": "Residential interior",
+      "description": "Neutral finishes, layered lighting and integrated storage create comfortable bedrooms with uncluttered layouts.",
+      "images": [
+        {
+          "src": "/interior-projects/selected/residential-bedrooms-1.webp",
+          "alt": "Bedrooms — Residential interior, view 1",
+          "width": 399,
+          "height": 266
+        },
+        {
+          "src": "/interior-projects/selected/residential-bedrooms-2.webp",
+          "alt": "Bedrooms — Residential interior, view 2",
+          "width": 407,
+          "height": 291
+        },
+        {
+          "src": "/interior-projects/selected/residential-bedrooms-3.webp",
+          "alt": "Bedrooms — Residential interior, view 3",
+          "width": 233,
+          "height": 277
+        },
+        {
+          "src": "/interior-projects/selected/residential-bedrooms-4.webp",
+          "alt": "Bedrooms — Residential interior, view 4",
+          "width": 158,
+          "height": 278
+        },
+        {
+          "src": "/interior-projects/selected/residential-bedrooms-5.webp",
+          "alt": "Bedrooms — Residential interior, view 5",
+          "width": 195,
+          "height": 277
+        }
+      ],
+      "sourcePages": [
+        76
+      ]
+    },
+    {
+      "id": "residential-living",
+      "company": "Living Rooms",
+      "scope": "Residential interior",
+      "description": "Soft seating, warm lighting and coordinated wall finishes bring comfort and balance to spaces for gathering and hosting.",
+      "images": [
+        {
+          "src": "/interior-projects/selected/residential-living-1.webp",
+          "alt": "Living Rooms — Residential interior, view 1",
+          "width": 365,
+          "height": 290
+        },
+        {
+          "src": "/interior-projects/selected/residential-living-2.webp",
+          "alt": "Living Rooms — Residential interior, view 2",
+          "width": 325,
+          "height": 267
+        },
+        {
+          "src": "/interior-projects/selected/residential-living-3.webp",
+          "alt": "Living Rooms — Residential interior, view 3",
+          "width": 266,
+          "height": 267
+        },
+        {
+          "src": "/interior-projects/selected/residential-living-4.webp",
+          "alt": "Living Rooms — Residential interior, view 4",
+          "width": 226,
+          "height": 276
+        },
+        {
+          "src": "/interior-projects/selected/residential-living-5.webp",
+          "alt": "Living Rooms — Residential interior, view 5",
+          "width": 227,
+          "height": 304
+        }
+      ],
+      "sourcePages": [
+        77
+      ]
+    },
+    {
+      "id": "residential-family-living",
+      "company": "Family Living",
+      "scope": "Residential interior",
+      "description": "Relaxed seating, media walls and soft curtains shape welcoming family spaces for everyday conversation and time together.",
+      "images": [
+        {
+          "src": "/interior-projects/selected/residential-family-living-1.webp",
+          "alt": "Family Living — Residential interior, view 1",
+          "width": 369,
+          "height": 277
+        },
+        {
+          "src": "/interior-projects/selected/residential-family-living-2.webp",
+          "alt": "Family Living — Residential interior, view 2",
+          "width": 325,
+          "height": 277
+        },
+        {
+          "src": "/interior-projects/selected/residential-family-living-3.webp",
+          "alt": "Family Living — Residential interior, view 3",
+          "width": 263,
+          "height": 278
+        }
+      ],
+      "sourcePages": [
+        78,
+        79
+      ]
+    },
+    {
+      "id": "residential-dining",
+      "company": "Dining & Dry Kitchen",
+      "scope": "Residential interior",
+      "description": "Dining spaces and open dry kitchens combine practical layouts with warm finishes and lighting for meals and entertaining.",
+      "images": [
+        {
+          "src": "/interior-projects/selected/residential-dining-1.webp",
+          "alt": "Dining & Dry Kitchen — Residential interior, view 1",
+          "width": 348,
+          "height": 294
+        },
+        {
+          "src": "/interior-projects/selected/residential-dining-2.webp",
+          "alt": "Dining & Dry Kitchen — Residential interior, view 2",
+          "width": 311,
+          "height": 234
+        },
+        {
+          "src": "/interior-projects/selected/residential-dining-3.webp",
+          "alt": "Dining & Dry Kitchen — Residential interior, view 3",
+          "width": 279,
+          "height": 233
+        },
+        {
+          "src": "/interior-projects/selected/residential-dining-4.webp",
+          "alt": "Dining & Dry Kitchen — Residential interior, view 4",
+          "width": 327,
+          "height": 513
+        },
+        {
+          "src": "/interior-projects/selected/residential-dining-5.webp",
+          "alt": "Dining & Dry Kitchen — Residential interior, view 5",
+          "width": 264,
+          "height": 295
+        },
+        {
+          "src": "/interior-projects/selected/residential-dining-6.webp",
+          "alt": "Dining & Dry Kitchen — Residential interior, view 6",
+          "width": 240,
+          "height": 294
+        }
+      ],
+      "sourcePages": [
+        78,
+        79
+      ]
+    },
+    {
+      "id": "residential-kitchens",
+      "company": "Kitchens",
+      "scope": "Residential interior",
+      "description": "Built-in cabinetry, durable work surfaces and thoughtfully arranged storage keep these kitchens organized and easy to use.",
+      "images": [
+        {
+          "src": "/interior-projects/selected/residential-kitchens-1.webp",
+          "alt": "Kitchens — Residential interior, view 1",
+          "width": 594,
+          "height": 352
+        },
+        {
+          "src": "/interior-projects/selected/residential-kitchens-2.webp",
+          "alt": "Kitchens — Residential interior, view 2",
+          "width": 371,
+          "height": 333
+        }
+      ],
+      "sourcePages": [
+        80
+      ]
+    },
+    {
+      "id": "residential-bathrooms",
+      "company": "Toilets",
+      "scope": "Residential interior",
+      "description": "Stone finishes, integrated storage and carefully placed lighting bring a calm, coordinated feel to these bathroom interiors.",
+      "images": [
+        {
+          "src": "/interior-projects/selected/residential-bathrooms-1.webp",
+          "alt": "Toilets — Residential interior, view 1",
+          "width": 591,
+          "height": 352
+        },
+        {
+          "src": "/interior-projects/selected/residential-bathrooms-2.webp",
+          "alt": "Toilets — Residential interior, view 2",
+          "width": 289,
+          "height": 278
+        },
+        {
+          "src": "/interior-projects/selected/residential-bathrooms-3.webp",
+          "alt": "Toilets — Residential interior, view 3",
+          "width": 298,
+          "height": 277
+        }
+      ],
+      "sourcePages": [
+        81
       ]
     }
   ]
