@@ -292,7 +292,7 @@ export const interiorProjects = [
   },
   {
     "id": "residential-dining",
-    "company": "Dining & Dry Kitchen",
+    "company": "Dining & Kitchen",
     "scope": "Residential interior",
     "description": "Dining spaces and open dry kitchens combine practical layouts with warm finishes and lighting for meals and entertaining.",
     "images": [
@@ -331,19 +331,7 @@ export const interiorProjects = [
         "alt": "Dining & Dry Kitchen — Residential interior, view 6",
         "width": 240,
         "height": 294
-      }
-    ],
-    "sourcePages": [
-      78,
-      79
-    ]
-  },
-  {
-    "id": "residential-kitchens",
-    "company": "Kitchens",
-    "scope": "Residential interior",
-    "description": "Built-in cabinetry, durable work surfaces and thoughtfully arranged storage keep these kitchens organized and easy to use.",
-    "images": [
+      },
       {
         "src": "/interior-projects/selected/residential-kitchens-1.webp",
         "alt": "Kitchens — Residential interior, view 1",
@@ -358,36 +346,9 @@ export const interiorProjects = [
       }
     ],
     "sourcePages": [
+      78,
+      79,
       80
-    ]
-  },
-  {
-    "id": "residential-bathrooms",
-    "company": "Toilets",
-    "scope": "Residential interior",
-    "description": "Stone finishes, integrated storage and carefully placed lighting bring a calm, coordinated feel to these bathroom interiors.",
-    "images": [
-      {
-        "src": "/interior-projects/selected/residential-bathrooms-1.webp",
-        "alt": "Toilets — Residential interior, view 1",
-        "width": 591,
-        "height": 352
-      },
-      {
-        "src": "/interior-projects/selected/residential-bathrooms-2.webp",
-        "alt": "Toilets — Residential interior, view 2",
-        "width": 289,
-        "height": 278
-      },
-      {
-        "src": "/interior-projects/selected/residential-bathrooms-3.webp",
-        "alt": "Toilets — Residential interior, view 3",
-        "width": 298,
-        "height": 277
-      }
-    ],
-    "sourcePages": [
-      81
     ]
   }
 ];

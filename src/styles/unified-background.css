@@ -1,7 +1,7 @@
 :root {
   --page-grid-color:#8c926012;
-  --page-base:#dae7df;
-  --page-wash:linear-gradient(110deg,#e5eee7 0%,#e0ebe4 18%,#edf3ed 44%,#d7e5dc 65%,#b8d2c5 84%,#a3c3b5 100%);
+  --page-base:#bfd0bf;
+  --page-wash:linear-gradient(110deg,#cbdacb 0%,#c5d5c4 18%,#d6e1d1 44%,#bdcfba 65%,#a5bfa5 84%,#8fac96 100%);
 }
 html[data-theme=dark] {
   --page-grid-color:#c4d4a112;
