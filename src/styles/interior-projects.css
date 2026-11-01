@@ -26,5 +26,8 @@ html[data-theme=dark] .interior-project-card{background:linear-gradient(135deg,#
 .interior-gallery-link{margin-top:16px;cursor:pointer}
 
 /* A simple closing action keeps the portfolio in focus. */
-.interior-consultation-action{display:flex;justify-content:flex-end;margin-top:32px}
+.interior-portfolio-actions{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;margin-top:20px}
+.interior-portfolio-actions .interior-project-actions{grid-column:2;margin-top:0}
+.interior-consultation-action{grid-column:3;display:flex;justify-content:flex-end}
+@media(max-width:900px){.interior-portfolio-actions{display:flex;flex-wrap:wrap;justify-content:flex-end}.interior-portfolio-actions .interior-project-actions{margin-right:auto}}
 .interior-consultation-action .button{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;min-height:48px;padding:14px 24px}

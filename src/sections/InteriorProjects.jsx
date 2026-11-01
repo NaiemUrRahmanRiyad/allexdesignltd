@@ -15,8 +15,10 @@ function InteriorProjects({onEnquire}) {
    <div className="interior-project-gallery">{project.images.slice(0,2).map((photo,index)=><button key={photo.src} type="button" className="interior-project-image product-open project-photo-open interior-photo-open" aria-label={`View ${project.company} — photo ${index+1}`} aria-haspopup="dialog" onClick={()=>setSelectedPhoto({...photo,images:project.images,title:project.company,type:project.scope,index,count:project.images.length})}><img src={photo.src} alt={photo.alt} width={photo.width} height={photo.height} loading="lazy" decoding="async"/></button>)}</div>
    <div className="interior-project-copy"><div><h3>{project.company}</h3><p className="interior-project-scope">{project.scope}</p><p>{project.description}</p><button type="button" className="furniture-text-link interior-gallery-link" aria-haspopup="dialog" onClick={()=>setSelectedPhoto({...project.images[0],images:project.images,title:project.company,type:project.scope,index:0,count:project.images.length})}>View all {project.images.length} photos <span aria-hidden="true">↗</span></button></div></div>
   </article>)}</div>
+  <div className="interior-portfolio-actions">
   {visibleCount<interiorProjects.length&&<div className="interior-project-actions"><button type="button" className="button" aria-controls="interior-project-collection" onClick={()=>setVisibleCount(count=>count+6)}>Show more projects <span aria-hidden="true">↓</span></button></div>}
   <div className="interior-consultation-action"><button type="button" className="button" onClick={()=>onEnquire('Interior design consultation')}>Discuss your interior <span aria-hidden="true">↗</span></button></div>
+  </div>
   <ProjectImageDialog photo={selectedPhoto} onClose={()=>setSelectedPhoto(null)} titleId="interior-image-title" />
  </section>;
 }
