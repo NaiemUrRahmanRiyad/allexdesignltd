@@ -26,5 +26,5 @@ html[data-theme=dark] .interior-project-card{background:linear-gradient(135deg,#
 .interior-gallery-link{margin-top:16px;cursor:pointer}
 
 /* A simple closing action keeps the portfolio in focus. */
-.interior-consultation-action{display:flex;justify-content:center;margin-top:32px}
+.interior-consultation-action{display:flex;justify-content:flex-end;margin-top:32px}
 .interior-consultation-action .button{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;min-height:48px;padding:14px 24px}
