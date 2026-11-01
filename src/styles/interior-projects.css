@@ -24,3 +24,19 @@ html[data-theme=dark] .interior-project-card{background:linear-gradient(135deg,#
 @media(prefers-reduced-motion:reduce){.interior-project-image img{transition:none}}
 
 .interior-gallery-link{margin-top:16px;cursor:pointer}
+
+/* Give the final consultation card its own surface against the green page. */
+html body #root .interior-projects .overview-next-step{
+ padding:clamp(20px,2.5vw,30px);
+ border:1px solid #b7a47c;
+ border-radius:20px;
+ background:linear-gradient(125deg,#fffaf0,#efe4ce);
+ box-shadow:0 12px 30px #394b2520,inset 0 1px 0 #ffffff;
+}
+html body #root .interior-projects .overview-next-step>p{color:#454b38}
+html[data-theme=dark] body #root .interior-projects .overview-next-step{
+ border-color:#9b895f;
+ background:linear-gradient(125deg,#494a35,#353e2c);
+ box-shadow:0 12px 30px #0004,inset 0 1px 0 #e6d5a329;
+}
+html[data-theme=dark] body #root .interior-projects .overview-next-step>p{color:#f1ead9}
